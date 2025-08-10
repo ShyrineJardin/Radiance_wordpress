@@ -1,0 +1,23 @@
+@mixin clear-both() {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+@mixin border-round() {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+@mixin border-switch() {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+@mixin border-circle() {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}

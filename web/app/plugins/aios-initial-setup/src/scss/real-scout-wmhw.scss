@@ -1,0 +1,249 @@
+@use 'mixins/mediaqueries' as *;
+
+.rs-wmhw {
+    $wrapper: &;
+
+    &-bg {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-mobile-only {
+        @include md {
+            display: none;
+        }
+    }
+
+    &-desktop-only {
+        display: none; 
+
+        @include md {
+            display: inline-block;
+        }
+    }
+
+    &-subtitle {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        padding: 18px 0;
+
+        font-weight: 600;
+        font-size: 18px !important;
+        line-height: 1;
+        color: #00194F;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @include xl {
+            padding: 0;
+            font-size: 28px !important;
+            line-height: 1.2;
+        }
+
+        span:last-child {
+            background: linear-gradient(45deg, #7ACAFF 10.82%, #4882FF 97.04%);
+            max-width: 189px;
+            width: 100%;
+            height: 4px;
+            margin-bottom: 3px;
+
+            @include xl {
+                max-width: 322px;
+                margin-bottom: 8px;
+            }
+        }
+    } 
+
+    &-container {
+        h2 {
+            font-weight: 600 !important;
+            font-size: 52px !important;
+            line-height: 1.1;
+            color: #00194F;
+            margin: 0 !important;
+            text-transform: uppercase;
+
+            @include xl {
+                font-size: 66px !important;
+                line-height: 1;
+            }
+
+            br {
+                @include lg {
+                    display: none;
+                }
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px !important;
+            line-height: 1.7;
+            letter-spacing: -0.02em;
+            color: #1C1E26;
+            margin: 18px 0 0 !important;
+        }
+    }
+
+    &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 20px;
+        margin-top: 42px;
+
+        width: 100%;
+        min-height: 52px;
+
+        background: linear-gradient(90deg, #304BF4 0%, #21ADF4 100%);
+        border-radius: 2px;
+
+        font-weight: 600;
+        font-size: 16px !important;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--font-color-rs-btn, #FFFFFF) !important;
+
+        &:hover {
+            color: var(--font-color-rs-btn, #FFFFFF) !important;
+        }
+
+        @include sm {
+            max-width: 339px;
+        }
+    }
+
+    &-vone {
+        overflow: hidden;
+
+        #{$wrapper}-section {
+            position: relative;
+
+            #{$wrapper} {
+                &-img {
+                    &-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 71px;
+                        max-width: none;
+                        width: auto;
+                        height: 536px;
+
+                        @include md {
+                            left: 105px;
+                            min-height: 536px;
+                            height: 103.5%;
+                        }
+                        @include xl {
+                            left: 16.528vw;
+                        }
+                    }
+
+                    &-accent {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        max-width: none;
+                        width: auto;
+                        height: 100%;
+
+                        @include md {
+                            height: 100%;
+                            left: 50%;
+                        }
+
+                        @include lg {
+                            left: 47.754vw;
+                        }
+
+                        @include xl {
+                            left: 46.806vw;
+                        }
+                    }
+                }
+
+                &-container {
+                    position: relative;
+                    z-index: 3;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 26px;
+                    padding-top: 38px;
+                    padding-bottom: 0;
+
+                    @include md {
+                        flex-direction: row;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        gap: 22px;
+                        padding: 38px 0 127px 44px;
+                    }
+
+                    @include lg {
+                        align-items: flex-start;
+                        padding: 76px 0 76px 74px;
+                    }
+
+                    @include xl {
+                        max-width: 1440px;
+                        width: 100%;
+                        margin: 0 auto;
+                        align-items: center;
+                        padding: 50px 0 50px 104px;
+                    }
+                }
+
+                &-content {
+                    padding-right: 20px;
+                    padding-left: 20px;
+
+                    @include md {
+                        padding-right: 0;
+                        padding-left: 0;
+                        max-width: 338px;
+                        min-width: 338px;
+                    }
+
+                    @include lg {
+                        max-width: 463px;
+                        min-width: 463px;
+                    }
+
+                    @include xl {
+                        max-width: 492px;
+                        min-width: 492px;
+                    }
+                }
+
+                &-device {
+                    position: relative;
+                    padding: 43px 0 43px 20px;
+
+                    @include md {
+                        padding: 0;
+                        max-width: 442px;
+                    }
+
+                    @include lg {
+                        max-width: 100%;
+                    }
+
+                    @include xl {
+                        max-width: 521px;
+                    }
+
+                    &-img {
+                        position: relative;
+                        max-width: none;
+                        width: 123.385%;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

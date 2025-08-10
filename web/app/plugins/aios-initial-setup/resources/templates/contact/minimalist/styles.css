@@ -1,0 +1,450 @@
+#inner-page-wrapper {
+    padding: 0;
+}
+#inner-page-wrapper > .container {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.ai-minimalist-wrapper {
+    display: block;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    
+    color: var(--primary)
+}
+.ai-minimalist-column-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.ai-minimalist-column-content-left {
+    width: 62.719298%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#content .ai-minimalist-column-content-left .entry-title,
+#content .ai-minimalist-column-content-left .entry-sub-title {
+    
+    font-size: 50px;
+    color: var(--primary);
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+}
+
+#content .ai-minimalist-column-content-left .entry-sub-title {
+    font-size: 35px;
+    color: var(--dark);
+    margin-top: 15px;
+}
+.ai-minimalist-column-content-left hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ai-minimalist-column-the-content {
+    display: block;
+    margin-top: 40px
+}
+.ai-minimalist-column-the-content p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+ul.ai-minimalist-contact-details {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+ul.ai-minimalist-contact-details li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 25px;
+    color: var(--primary);
+}
+ul.ai-minimalist-contact-details li span[class*=ai-font] {
+    width: 35px;
+    color: var(--primary);
+}
+ul.ai-minimalist-contact-details li span[class*=ai-font-envelope] {
+    font-size: 13px;
+}
+.ai-minimalist-column-content-right {
+    width: 37.280702%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ai-minimalist-column-agent {
+    display: block;
+}
+.ai-minimalist-column-agent-image img {
+    display: block;
+    width: 100%;
+}
+.ai-minimalist-column-agent-details {
+    display: block;
+    padding: 25px;
+    background-color: var(--primary);
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+.ai-minimalist-column-agent-details-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 22px;
+}
+.ai-minimalist-column-agent-details-socials a {
+    font-size: 16px;
+}
+.ai-minimalist-testimonials {
+    display: block;
+    background-color: #f8f8f8;
+    margin-top: 90px;
+    padding: 80px 0;
+}
+.ai-minimalist-testimonial {
+    display: block;
+    padding: 0 35px;
+}
+.ai-minimalist-testimonial-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 24px;
+    color: var(--primary);
+    margin-top: -12px;
+    cursor: pointer;
+}
+.ai-minimalist-testimonial-arrow.ai-minimalist-testimonial-arrow-prev {
+    left: auto;
+    right: 0;
+}
+.ai-minimalist-testimonial-arrow:hover{
+    color: var(--primary);
+}
+.ai-minimalist-testimonials-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ai-minimalist-testimonials-item-name {
+    margin-right: 35px;
+    
+    font-size: 33px;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    width: 100%;
+    display: block;
+    line-height: 1;
+}
+.ai-minimalist-testimonials-item-caption {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 35px;
+    border-left: solid 1px #e6e6e6;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--primary);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+.ai-minimalist-form-wrapper {
+    display: block;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    
+    color: var(--secondary);
+}
+.ai-minimalist-form {
+    display: block;
+    background-color: var(--primary);
+    padding: 70px;
+    color: #fff;
+}
+.ai-minimalist-form .ai-minimalist-form {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.ai-minimalist-form .ai-minimalist-form-title {
+    text-align: center;
+}
+.ai-minimalist-form .ai-minimalist-form-title h2 {
+    
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+.ai-minimalist-form .ai-minimalist-form-title h2 strong {
+    font-weight: normal;
+}
+.ai-minimalist-form .ai-minimalist-form-title p {
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.ai-minimalist-form .ai-minimalist-form-row {
+    display: flex;
+    margin-top: 40px;
+    margin-left: -14px;
+    margin-right: -14px;
+    padding: 14px 0;
+}
+.ai-minimalist-form .ai-minimalist-form-col {
+    position: relative;
+    width: calc(100%/3);
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.ai-minimalist-form ::-webkit-input-placeholder,
+.ai-minimalist-form ::placeholder {
+    color: #ffffff;
+}
+.ai-minimalist-form {
+    font-size: 14px;
+    color: #ffffff;
+}
+.ai-minimalist-form .custom-page-col input[type=text],
+.ai-minimalist-form .custom-page-col input[type=email],
+.ai-minimalist-form .custom-page-col input[type=phone],
+.ai-minimalist-form .custom-page-col textarea {
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 42px;
+    background: transparent !important;
+    color: #ffffff;
+    border: 0;
+    border-bottom: solid 2px #ffffff;
+    padding: 14px 0;
+}
+.ai-minimalist-form .custom-page-col textarea {
+    padding-right: 50px;
+    resize: none;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.ai-minimalist-form button {
+    appearance: none;
+    background: transparent;
+    font-size: 0;
+    position: absolute;
+    top: 16px;
+    right: 3px;
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+.ai-minimalist-form .custom-page-form {
+    position: relative;
+}
+.ai-minimalist-form .custom-page-submit .custom-page-col {
+    position: static;
+    margin-top: 0;
+}
+.ai-minimalist-form .custom-page-submit .custom-page-col .wpcf7-spinner {
+    bottom: 58px;
+    right: 6px;
+}
+.ai-minimalist-form .custom-page-col input[type=submit] {
+    display: none !important;
+}
+.ai-minimalist-form .custom-page-col button {
+    display: inline-block !important;
+    appearance: none;
+    background: transparent;
+    font-size: 0;
+    position: absolute;
+    bottom: 7px;
+    right: 30px;
+    outline: 0 !important;
+    border: 0 !important;
+    font-size: 28px;
+}
+.ai-minimalist-cta {
+    display: flex;
+    margin-top: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.ai-minimalist-cta-button {
+    display: flex;
+    width: calc(100%/3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ai-minimalist-cta-button a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: solid 1px var(--primary);
+    max-width: 360px;
+    padding: 45px 60px;
+    margin: 30px auto 48px;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    color: #b7b7b7;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+.ai-minimalist-cta-button a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -48px;
+    background-color: #b7b7b7;
+    width: 1px;
+    height: 68px;
+    transition: background-color 0.3s linear;
+}
+.ai-minimalist-cta-button a span {
+    display: block;
+    margin-top: 5px;
+    font-size: 35px;
+    line-height: 1.3;
+    color: var(--primary);
+    transition: color 0.3s linear;
+}
+.ai-minimalist-cta-button a:hover {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+.ai-minimalist-cta-button a:hover::before {
+    background-color: var(--primary);
+}
+.ai-minimalist-cta-button a:hover span {
+    color: #ffffff;
+}
+.ai-minimalist-map {}
+.ai-minimalist-map-title {
+    display: block;
+    font-size: 20px;
+    color: var(--primary);
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.ai-minimalist-map-frame {
+    display: block;
+    position: relative;
+    padding-bottom: 35%;
+}
+.ai-minimalist-map-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media only screen and (max-width: 1199px) {
+    .ai-minimalist-cta-button a {
+        padding: 45px 25px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .ai-minimalist-column-content {
+        flex-wrap: wrap;
+    }
+    .ai-minimalist-column-content-left,
+    .ai-minimalist-column-content-right {
+        width: 100%;
+    }
+    
+    #content .ai-minimalist-column-content-left .entry-title {
+        font-size: 36px;
+    }
+    #content .ai-minimalist-column-content-left .entry-title strong {
+        display: block;
+    }
+    #content .ai-minimalist-column-content-left .entry-sub-title {
+        font-size: 26px;
+    }
+    .ai-minimalist-column-agent {
+        max-width: 410px;
+        margin: 0 auto;
+    }
+    .ai-minimalist-form {
+        font-size: 16px;
+        padding: 70px 30px;
+    }
+    .ai-minimalist-form .ai-minimalist-form-title h2 {
+        font-size: 35px;
+    }
+    .ai-minimalist-form .ai-minimalist-form-row {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .ai-minimalist-form .ai-minimalist-form-col {
+        width: 100%;
+    }
+    .ai-minimalist-form label {
+        margin-top: 15px;
+    }
+    .ai-minimalist-form input,
+    .ai-minimalist-form textarea {
+    }
+    .ai-minimalist-form button {
+        top: 16px;
+        right: 13px;
+    }
+    .ai-minimalist-cta {
+        flex-wrap: wrap;
+    }
+    .ai-minimalist-cta-button {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .ai-minimalist-testimonials-item {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .ai-minimalist-testimonials-item-name {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+    .ai-minimalist-testimonials-item-caption {
+        padding-left: 0;
+        border-left: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .ai-minimalist-column-content-left .entry-title {
+        font-size: 36px;
+    }
+    .ai-minimalist-column-content-left .entry-sub-title {
+        font-size: 28px;
+    }
+    .ai-minimalist-form .ai-minimalist-form-title h2 {
+        font-size: 27px;
+    }
+    .ai-minimalist-form .ai-minimalist-form-title p {
+        font-size: 16px;
+    }
+}

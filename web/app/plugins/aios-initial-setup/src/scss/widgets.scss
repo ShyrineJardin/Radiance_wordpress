@@ -1,0 +1,130 @@
+/** Add Agentimage Logo on Widget */
+.widget[id*=aios_post_information_by_category],
+.widget[id*=testimonial_reviews],
+.widget[id*=idx_platinum_slideshow],
+.widget[id*=idx_broker_featured_property_js],
+.widget[id*=ihf_featured_properties],
+.widget[id*=ihf_js_featured_properties],
+.widget[id*=aios_featured_properties 	],
+.widget[id*=aios-mobile-header],
+.widget[id*=aios_rss] {
+  h3{
+    background: url(https://resources.agentimage.com/plugins/aios-initial-setup/widget-icon.png) no-repeat 10px 7px;
+    padding-left: 56px;
+  }
+}
+
+/** Hide Option Page this will be accessible on widget options link */
+a[href="options-general.php?page=aios-all-widgets-options"]{
+  display: none !important;
+}
+
+/** Widgets */
+.slick-enabler-hide{
+  display: none;
+}
+
+/** Help link */
+.aios-all-widgets-help {
+  padding:10px 0 3px 0;
+  text-align:right;
+  a {
+    text-decoration:none;
+  }
+  *[class*='ai'] {
+    vertical-align:middle;
+    display:inline-block;
+    margin-right:5px;
+  }
+}
+
+/** Mobile Header */
+.aios-all-widgets-btn {
+  position: relative;
+  margin: 0;
+  padding: 15px;
+  background: #dedede;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+
+  strong {
+    font-weight: 600;
+  }
+
+  .toggle-indicator {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    &::before {
+      content: "\f140";
+      font: 400 20px/1 dashicons;
+      speak: none;
+      display: block;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-decoration: none!important;
+    }
+  }
+}
+
+.aios-all-widgets-color{
+  background: #f1f1f1;
+  margin: 0 -15px;
+
+  &:last-of-type {
+    margin-bottom: 20px !important;
+  }
+
+  .aios-all-widgets-btn {
+    font-size: 14px;
+  }
+  p {
+    float: left;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+#customize-controls .aios-all-widgets-color{
+  margin: 0 -10px;
+}
+
+.aios-all-widgets-active .toggle-indicator::before{
+  content: "\f142";
+}
+
+.aios-all-widgets-color-container {
+  display: none;
+  padding: 15px;
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.aios-modal-window {
+  .aios-modal-loading,
+  .aios-modal-loader {
+    // background: url(../images/Spinner-1s-38px.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: unset;
+    transition: unset;
+    background-color: transparent;
+  }
+  .aios-modal-loading {
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    top: 0;
+  }
+}
+
+.aios-loader {
+  display: inline-block;
+  padding: 12px;
+}

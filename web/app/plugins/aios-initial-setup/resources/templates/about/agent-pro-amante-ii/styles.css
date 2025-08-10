@@ -1,0 +1,72 @@
+#inner-page-wrapper > .container {
+    padding: 0;
+    width: 100%;
+}
+
+#ip-amante-ii-about #content-sidebar,
+#ip-amante-ii-about #content-full {
+    margin-top: 39px;
+}
+
+#inner-page-wrapper {
+    overflow: hidden;
+}
+
+#ip-amante-ii-about #welcome {
+    position: relative;
+    padding-top: 40px;
+}
+#ip-amante-ii-about .welcome-text {
+    width: 100%;
+}
+#ip-amante-ii-about .welcome-text .section-title-a{
+    padding: 40px 0 20px;
+    margin: 0;
+}
+
+#ip-amante-ii-about #content .welcome-text .section-title-a h1{
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0;
+}
+
+#ip-amante-ii-about #welcome .welcome-right{
+    float: right;
+    width: 60%;
+    padding: 0 0 2% 3%;
+}
+#ip-amante-ii-about #welcome .welcome-right .welcome-agent {
+    position: relative;
+}
+#ip-amante-ii-about #welcome .welcome-right .welcome-agent .welcome-agent img{
+    width: 100%;
+    display: block;
+}
+
+#ip-amante-ii-about #welcome .welcome-left{
+    width: 100%;
+}
+
+#ip-amante-ii-about  .welcome-text .section-title-a{
+    text-align: left;
+    
+    letter-spacing: .06em;
+    line-height: 1;
+    color: var(--font-color-title);
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#content p {
+    text-align: left;
+    margin: 28px 0;
+}
+
+@media only screen and (max-width: 991px) {
+    #ip-amante-ii-about #welcome .welcome-right{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}

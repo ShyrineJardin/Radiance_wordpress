@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C700%3B1%2C400%3B1%2C500%3B1%2C700&#038;display=swap&#038;">
+  <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1.5;
+    }
+    ol, ul {
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+    ol li,
+    ul li{
+      padding: 5px 0;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="https://resources.agentimage.com/wpuikit/v1/wpuikit.min.css">
+  <style>
+    .wpui-tabs-header{
+      display: none !important;
+    }
+    .wpui-tabs-body{
+      width: 100% !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+    .wpui-col-md-12:last-of-type{
+      margin-top: 15px !important;
+    }
+    .auto-highlight:focus{
+      border-color: #007cba !important;
+      box-shadow: 0 0 0 1px #007cba !important;
+      outline: 2px solid transparent!important;
+    }
+    .mt-3{
+      margin-top: 15px
+    }
+  </style>
+</head>
+<body>
+  <div id="wpui-container-minimalist">
+    <div class="wpui-tabs">
+      <!-- BEGIN: Header -->
+      <div class="wpui-tabs-header">
+        <ul>
+          <li><a data-id="docs" href="#" class="active-panel">Settings</a></li>
+        </ul>
+      </div>
+      <!-- END: Header -->
+      <!-- BEGIN: Body -->
+      <div class="wpui-tabs-body">
+        <div data-id="docs" class="wpui-tabs-content">
+          <div class="wpui-tabs-title">
+            <span>Documentation: IDX Broker JS</span>
+          </div>
+          <div class="wpui-tabs-container">
+            <div class="aios-shortcode">
+
+              <!-- BEGIN: Row -->
+              <div class="wpui-row wpui-row-box">
+                <div class="wpui-col-md-12">
+                  <p class="mt-0"><span class="wpui-settings-title">Instruction</span></p>
+                </div>
+                <div class="wpui-col-md-12">
+                  <ol>
+                    <li>
+                      You need to configure the widget based on your preference, on the HTML part, put the static html and change the required data using the list of shortcodes below.
+                    </li>
+                    <li>
+                      You need to put the repeated HTML part inside the loop:
+                      <textarea class="auto-highlight" readonly style="height: 134px !important; margin-top: 15px">&lt;h2&gt;Sample HTML&lt;/h2&gt;
+&lt;div&gt;
+  [idx_loopstart]
+    -insert repeated HTML part here-
+  [idx_loopend]
+&lt;/div&gt;</textarea>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <!-- End: Row -->
+
+              <!-- BEGIN: Row -->
+              <div class="wpui-row wpui-row-box">
+                <div class="wpui-col-md-12">
+                  <p class="mt-0"><span class="wpui-settings-title">Shortcodes: Loop</span></p>
+                </div>
+                <div class="wpui-col-md-12">
+                  <div>
+                    <p>Start of Loop</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[idx_loopstart]">
+                  </div>
+                  <div class="mt-3">
+                    <p>End of Loop</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[idx_loopend]">
+                  </div>
+                </div>
+              </div>
+              <!-- End: Row -->
+
+              <!-- BEGIN: Row -->
+              <div class="wpui-row wpui-row-box">
+                <div class="wpui-col-md-12">
+                  <p class="mt-0"><span class="wpui-settings-title">Inline Shortcodes</span></p>
+                </div>
+                <div class="wpui-col-md-12">
+
+                  <div>
+                    <p>Permalink</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[link]">
+                  </div>
+
+                  <div>
+                    <p>Image URL</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[photo_url]">
+                  </div>
+
+                  <div>
+                    <p>ID</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[listing_ID]">
+                  </div>
+
+                  <div>
+                    <p>Street number and street name</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[address]">
+                  </div>
+
+                  <div>
+                    <p>City</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[city]">
+                  </div>
+
+                  <div>
+                    <p>State</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[state]">
+                  </div>
+
+                  <div>
+                    <p>State Abbreviation</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[state_short]">
+                  </div>
+
+                  <div>
+                    <p>Zip Code</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[zipcode]">
+                  </div>
+
+                  <div>
+                    <p>Price</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[price]">
+                  </div>
+
+                  <div>
+                    <p>Beds</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[beds]">
+                  </div>
+
+                  <div>
+                    <p>Baths</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[baths]">
+                  </div>
+
+                  <div>
+                    <p>Remarks</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[remarks]">
+                  </div>
+
+                  <div>
+                    <p>Status</p>
+                    <input class="auto-highlight" readonly="" type="text" value="[status]">
+                  </div>
+
+                </div>
+              </div>
+              <!-- End: Row -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: Body -->
+    </div>
+  </div>
+
+  <script src="https://resources.agentimage.com/libraries/js/jquery-1.12.4.min.js"></script>
+  <script src="https://resources.agentimage.com/libraries/js/jquery.clipboard.min.js"></script>
+  <script src="https://resources.agentimage.com/wpuikit/v1/wpuikit.min.js"></script>
+  <script>
+    (function() {
+      jQuery('.auto-highlight').on('mouseup', function(e){
+        e.preventDefault();
+        jQuery(e.currentTarget).select();
+      });
+    })()
+  </script>
+</body>
+</html>

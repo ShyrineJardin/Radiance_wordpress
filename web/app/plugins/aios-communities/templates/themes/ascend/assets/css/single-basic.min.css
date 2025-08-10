@@ -1,0 +1,55 @@
+#inner-page-wrapper .container {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+#content .entry:before,
+#content .entry:after {
+  display: none !important;
+}
+
+.community-featured-image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.community-featured-image canvas {
+  width: 100%;
+  height: auto;
+}
+.community-featured-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none !important;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.community-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.community-title h1,
+.community-title h2 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.community-content p {
+  margin: 0 0 24px;
+}
+.community-content p:last-child {
+  margin-bottom: 0;
+}
+.community-properties {
+  margin-top: 24px;
+}
+.community-cta {
+  margin-bottom: 42px;
+  text-align: center;
+}

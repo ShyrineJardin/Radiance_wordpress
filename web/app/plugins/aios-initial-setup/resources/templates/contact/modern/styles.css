@@ -1,0 +1,390 @@
+/*******************************************************
+ *
+ * General
+ *
+ *******************************************************/
+#inner-page-wrapper {
+    padding: 0;
+}
+
+#inner-page-wrapper>.container {
+    width: 100%;
+    padding: 0;
+}
+
+#ai-modern-contact {
+    position: relative;
+    margin: 70px 0 90px;
+}
+
+#ai-modern-contact .ai-modern-contact-entry {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+#ai-modern-contact .ai-modern-contact-entry-inner {
+    position: relative;
+    display: flex;
+}
+
+#ai-modern-contact .ai-modern-contact-photo {
+    position: relative;
+    display: block;
+    width: 41.66666667%;
+}
+
+#ai-modern-contact .ai-modern-contact-photo span {
+    position: relative;
+    display: block;
+    margin-left: calc(((100vw - 1140px) / -2) + 58px);
+}
+
+#ai-modern-contact .ai-modern-contact-photo span:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 130px;
+    left: 0;
+    width: 46%;
+    height: 100vh;
+    background: #202020;
+}
+
+#ai-modern-contact .ai-modern-contact-photo canvas {
+    display: block;
+    width: calc(100% - 50px);
+    max-width: 619px;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#ai-modern-contact .ai-modern-contact-main {
+    position: relative;
+    display: block;
+    margin: auto 0;
+    padding: 50px 65px 50px 85px;
+    flex-grow: 1;
+    width: 65%;
+}
+
+#ai-modern-contact .ai-modern-contact-title {
+    position: relative;
+    display: block;
+    margin: 0;
+    
+    text-transform: uppercase;
+}
+
+#ai-modern-contact .ai-modern-contact-title:after {
+    content: "";
+    display: block;
+    width: 133px;
+    max-width: 100%;
+    height: 1px;
+    margin-top: 36px;
+    background: var(--primary);
+}
+
+#ai-modern-contact .ai-modern-contact-title span {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+    line-height: 1;
+}
+
+#ai-modern-contact .ai-modern-contact-title strong {
+    display: block;
+    font-size: 75px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1;
+    color: var(--font-color-title);
+    margin: 4px 0 0;
+}
+
+#ai-modern-contact .ai-modern-contact-info {
+    position: relative;
+    display: block;
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+#ai-modern-contact .ai-modern-contact-info li {
+    position: relative;
+    display: flex;
+}
+
+#ai-modern-contact .ai-modern-contact-info li>span {
+    width: 18px;
+    font-size: 14px;
+    color: var(--primary);
+    display: inline-block;
+    margin: 7px 15px 0 0;
+}
+
+#ai-modern-contact .ai-modern-contact-info li>span.envelope {
+    font-size: 11px;
+}
+
+#ai-modern-contact .ai-modern-contact-info li>span.pin {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+#ai-modern-contact .ai-modern-contact-info li a,
+#ai-modern-contact .ai-modern-contact-info li p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #444444;
+    transition: all 0.4s ease-in-out;
+}
+
+#ai-modern-contact .ai-modern-contact-info li a:hover {
+    color: var(--primary);
+}
+
+#ai-modern-contact .ai-modern-contact-info li p {
+    display: block;
+    margin: 0;
+}
+
+#ai-modern-contact .ai-modern-contact-form {
+    position: relative;
+    display: block;
+    margin-top: 42px;
+}
+
+#ai-modern-contact .ai-modern-contact-form-title {
+    position: relative;
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--font-color-title);
+}
+
+#ai-modern-contact .ai-modern-contact-form-title strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#ai-modern-contact .ai-modern-contact-form-title span {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: var(--font-color-default);
+    margin-top: 20px;
+}
+
+#ai-modern-contact .custom-page-form {
+    position: relative;
+    display: block;
+    margin-top: 35px;
+}
+
+#ai-modern-contact .ai-modern-contact-form-group {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -5px;
+}
+
+.ai-modern-contact-form .custom-page-col label {
+    position: relative;
+    display: block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.ai-modern-contact-form .custom-page-col input[type=text],
+.ai-modern-contact-form .custom-page-col input[type=phone],
+.ai-modern-contact-form .custom-page-col input[type=email],
+.ai-modern-contact-form .custom-page-col textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 26px;
+    color: var(--font-color-default);
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--font-color-default);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ai-modern-contact-form .custom-page-col textarea {
+    resize: none;
+    height: 70px;
+    padding-right: 43px;
+    white-space: normal;
+    text-overflow: clip;
+}
+.ai-modern-contact-form .custom-page-form {
+    position: relative;
+}
+.ai-modern-contact-form .custom-page-submit .custom-page-col {
+    position: static;
+    margin-top: 0;
+}
+.ai-modern-contact-form .custom-page-submit .custom-page-col .wpcf7-spinner {
+    bottom: 58px;
+    right: 6px;
+}
+.ai-modern-contact-form .custom-page-col input[type=submit] {
+    display: none !important;
+}
+.ai-modern-contact-form .custom-page-col button {
+    display: inline-block !important;
+    appearance: none;
+    background: transparent;
+    font-size: 0;
+    position: absolute;
+    bottom: 7px;
+    right: 30px;
+    outline: 0 !important;
+    border: 0 !important;
+    font-size: 28px;
+    color: var(--font-color-default);
+}
+
+#ai-modern-contact .ai-modern-contact-map {
+    position: relative;
+    display: block;
+    margin: 100px 0 0;
+    padding: 0 50px;
+}
+
+#ai-modern-contact .ai-modern-contact-map:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    bottom: 60px;
+    right: 50px;
+    width: 706px;
+    background: var(--primary);
+}
+
+#ai-modern-contact .ai-modern-contact-map iframe {
+    position: relative;
+    display: block;
+    width: calc(100% - 50px);
+    filter: grayscale(1);
+}
+
+/*******************************************************
+ *
+ * Mobile styles and other media queries
+ *
+ *******************************************************/
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1280px) {}
+
+@media only screen and (max-width: 1199px) {
+    #ai-modern-contact .ai-modern-contact-photo span {
+        margin-left: calc(((100vw - 940px) / -2) + 58px);
+    }
+
+    #ai-modern-contact .ai-modern-contact-title strong {
+        font-size: 65px;
+    }
+
+    #ai-modern-contact .ai-modern-contact-title span {
+        font-size: 25px;
+    }
+
+    #ai-modern-contact .ai-modern-contact-form-title strong {
+        font-size: 35px;
+    }
+
+    #ai-modern-contact .ai-modern-contact-main {
+        padding: 40px 45px 40px 65px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #ai-modern-contact {
+        margin: 50px 0;
+    }
+
+    #ai-modern-contact .ai-modern-contact-entry {
+        padding-bottom: 0;
+    }
+
+    #ai-modern-contact .ai-modern-contact-entry-inner {
+        display: block;
+    }
+
+    #ai-modern-contact .ai-modern-contact-photo,
+    #ai-modern-contact .ai-modern-contact-photo canvas,
+    #ai-modern-contact .ai-modern-contact-map iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #ai-modern-contact .ai-modern-contact-photo span {
+        margin-left: 0;
+    }
+
+    #ai-modern-contact .ai-modern-contact-photo span:before,
+    #ai-modern-contact .ai-modern-contact-map:before {
+        display: none;
+    }
+
+    #ai-modern-contact .ai-modern-contact-main {
+        padding: 35px 0 0;
+        width: 100%;
+    }
+
+    #ai-modern-contact .ai-modern-contact-title strong {
+        font-size: 50px;
+    }
+
+    #ai-modern-contact .ai-modern-contact-form-title strong {
+        font-size: 25px;
+    }
+
+    #ai-modern-contact .ai-modern-contact-info li>span {
+        margin-left: 7px;
+    }
+
+    #ai-modern-contact .ai-modern-contact-map {
+        width: 750px;
+        max-width: 100%;
+        margin: 50px auto 0;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 480px) {
+    #ai-modern-contact .ai-modern-contact-title strong {
+        font-size: 36px;
+    }
+    #ai-modern-contact .custom-page-form {
+        margin-top: 25px;
+    }
+}

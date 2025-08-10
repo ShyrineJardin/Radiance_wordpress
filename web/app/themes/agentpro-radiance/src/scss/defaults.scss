@@ -1,0 +1,809 @@
+@use '../mixins/media-queries.scss' as *;
+@use '../scss/utility' as *;
+
+:root {
+    /** Font default */
+    --font-family-default: "Lato", serif;
+    --font-family-title: "Playfair Display", serif;
+    --font-weight-default: 300;
+    --font-size-default: 14px;
+    --font-size-title: 18px;
+    --font-color-default: #646464;
+    --font-color-title: #000000;
+
+    /** Use for input, button, and any other element */
+    --primary: #000000;
+    --primary-dark: #000000;
+    --secondary: #000000;
+    --primary-text: #646464;
+    --background: #ffffff;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --default-transition: .3s cubic-bezier(.4, 0, .2, 1);
+    --transition: all 0.4s ease-in-out;
+
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, tt, var, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+area,
+img,
+map {
+    outline: none;
+}
+
+.clearfix,
+.clear {
+    clear: both;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    -webkit-text-size-adjust: none;
+}
+
+::-webkit-input-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+:-moz-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+    border-radius: 0;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    outline: none;
+
+    &:focus {
+        color: inherit;
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.ai-hide {
+    display: none !important;
+}
+
+.slick-slider,
+.slick-slider *,
+.slick-slider a,
+input:focus,
+select:focus,
+textarea:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Hide Headings for HTML5 */
+.aios-starter-theme-hide-title {
+    display: none !important;
+    font-size: 18px !important;
+}
+
+#content {
+    line-height: 1.7;
+
+    th{
+        font-weight: bolder;
+    }
+    h4, p { 
+        margin: 1.12em 0; line-height: 1.7;
+    }
+	blockquote {
+		margin: 1.12em 0;
+		line-height: 1.7;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	ul {
+		margin: 1.12em 0;
+		line-height: 1.7;
+		margin-left: 40px;
+		list-style-type: disc;
+		ol {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+    fieldset, form {
+        margin: 1.12em 0;
+        line-height: 1.7;
+    }
+	ol {
+		margin: 1.12em 0;
+		line-height: 1.7;
+		margin-left: 40px;
+		list-style-type: decimal;
+		list-style-type: decimal;
+        ul, ol { 
+            margin-top: 0; margin-bottom: 0;
+        }
+	}
+    dl, dir, menu {
+        margin: 1.12em 0;
+        line-height: 1.7;
+    }
+    dir, menu {
+        margin-left: 40px;
+    }
+    i, cite, em, var, address {
+        font-style: italic;
+    }
+    pre, tt, code, kbd {
+        font-family: monospace;
+    }
+	big {
+		font-size: 1.17em;
+	}
+	small {
+		font-size: .83em;
+	}
+	sub {
+		font-size: .83em;
+		vertical-align: sub;
+	}
+	sup {
+		font-size: .83em;
+		vertical-align: super;
+	}
+	table {
+		border-spacing: 2px;
+	}
+    thead, tbody, tfoot, td, th, tr { 
+        vertical-align: inherit;
+    }
+	hr {
+		border: 1px inset;
+	}
+	dd {
+		margin-left: 40px;
+	}
+    img[class*="align"],
+    img[class*="wp-image-"],
+    img[class*="attachment-"],
+    img.size-full,
+    img.size-large,
+    img.header-image,
+    img.wp-post-image{
+        max-width: 98%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: auto;
+    }
+    embed,
+    iframe,
+    object,
+    video{
+        max-width: 100%;
+    }
+
+    .entry {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    .aios-starter-theme-entry-meta {
+        display: none;
+    }
+
+    .entry-title {
+        font-size: 24px;
+    }
+
+    .archive-title {
+        font-size: 24px;
+    }
+
+    .archive-subtitle {
+        font-size: 24px;
+    }
+
+    .archive-thumbnail {
+        width: 27%;
+        float: left;
+    }
+
+    .archive-content {
+        &.archive-has-thumbnail {
+       
+        }
+    }
+    .archive-more {
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .post {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .page-links {
+        text-align: center;
+
+        * {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+
+        .current {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+
+    .alignnone {
+        clear: both;
+        margin: 15px 0;
+    }
+
+    .aligncenter {
+        clear: both;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .alignleft {
+        float: left;
+        margin: 15px 1% 15px 0;
+    }
+
+    .alignright {
+        float: right;
+        margin: 15px 0 15px 1%;
+    }
+}
+
+aside {
+    line-height: 1.7;
+
+    width: 100%;
+
+    h2 {
+        &.widget-title {
+            display: block;
+            background: #d7d7d7;
+            padding: 7px;
+            font-size: 14px;
+        }
+    }
+
+    th{
+        font-weight: bolder;
+    }
+    h4, p { 
+        margin: 1.12em 0; line-height: 1.7;
+    }
+	blockquote {
+		margin: 1.12em 0;
+		line-height: 1.7;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	ul {
+		margin: 1.12em 0;
+		line-height: 1.7;
+		margin-left: 40px;
+		list-style-type: disc;
+		ol {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+	fieldset {
+		margin: 1.12em 0;
+		line-height: 1.7;
+	}
+	form {
+		margin: 1.12em 0;
+		line-height: 1.7;
+	}
+	ol {
+		margin: 1.12em 0;
+		line-height: 1.7;
+		margin-left: 40px;
+		list-style-type: decimal;
+		ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		ol {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+    dl, dir, menu {
+        margin: 1.12em 0;
+        line-height: 1.7;
+    }
+    dir, menu {
+        margin-left: 40px;
+    }
+    i, cite, em, var, address { 
+        font-style: italic; 
+    }
+    pre, tt, code, kbd { 
+        font-family: monospace; 
+    }
+	big {
+		font-size: 1.17em;
+	}
+	small {
+		font-size: .83em;
+	}
+	sub {
+		font-size: .83em;
+		vertical-align: sub;
+	}
+	sup {
+		font-size: .83em;
+		vertical-align: super;
+	}
+	table {
+		border-spacing: 2px;
+	}
+    thead, tbody, tfoot { 
+        vertical-align: middle; 
+    }
+    td, th, tr { 
+        vertical-align: inherit; 
+    }
+	hr {
+		border: 1px inset;
+	}
+	dd {
+		margin-left: 40px;
+	}
+}
+
+samp {
+	font-family: monospace;
+}
+
+sidebar {
+	ol {
+		list-style-type: decimal;
+	}
+}
+
+#content-sidebar,
+#content-full {
+    width: 100%;
+    margin: 0 auto;
+
+
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+#content-sidebar {
+
+    @include md{
+        display: flex;
+    }
+    #content {
+        width: 100%;
+
+        @include md{
+            width: 67%;
+        }
+    }
+    .sidebar{
+
+        @include md{
+            margin-left: 3%;
+            width: 30%;
+        }
+    }
+}
+
+#content-full {
+    #content {
+        width: 100%;
+    }
+}
+
+.page-template-template-left-sidebar {
+    #content-sidebar {
+        #content {
+            float: right;
+        }
+
+        aside {
+            float: left;
+        }
+    }
+}
+#inner-page-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.gravatar {
+    float: right;
+}
+
+.comments-template {
+    ol {
+        &.comment-list {
+            margin: 20px 0 0 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                &.comment {
+                    padding: 35px 0;
+                    border-bottom: 1px dotted;
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        &.children {
+            margin: 20px 0 0 40px;
+            padding: 0;
+            list-style: none;
+
+            li {
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .comment-author {
+        &.vcard {
+            img {
+                display: block;
+            }
+        }
+    }
+
+    .reply {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .comment-meta {
+        font-size: 10px;
+    }
+
+    .screen-reader-text {
+        display: none;
+    }
+
+    .comment-navigation {
+        margin: 10px 0;
+        background: none;
+    }
+}
+
+
+.comment-form-comment {
+    textarea {
+        display: block;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        font-weight: 700;
+    }
+}
+
+.wp-caption {
+    background-color: #f3f3f3;
+    margin: 10px;
+    padding-top: 4px;
+    text-align: center;
+    max-width: 100%;
+
+    img {
+        border: 0 none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#content .wp-caption p.wp-caption-text,
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0.5em 0 1.1em 0;
+    font-style: italic;
+}
+
+.gallery-caption {
+    text-align: center;
+    font-style: italic;
+}
+
+.category .post,
+.archive .post {
+    border-bottom: 1px dotted;
+}
+
+.attachment-post-thumbnail {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    font-style: italic;
+}
+
+#content {
+
+}
+
+.yoast-breadcrumbs {
+    margin: 20px 0 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.leading-tight {
+    line-height: 1.1;
+}
+
+h1,
+.h1,
+.heading-1{
+    font-size: 42px;
+    font-family: var(--font-family-title);
+    color: var(--font-color-title, #000000); 
+	.small, small { 
+		color: var(--primary-text, #000000); 
+	}
+
+    @include md{
+        font-size: 52px;
+    }
+    @include xl{
+        font-size: 65px;
+    }
+}
+
+h2,
+.h2,
+.heading-2{
+    font-size: 28px;
+    font-family: var(--font-family-title);
+    color: var(--font-color-title, #000000); 
+    .small, small { 
+		color: var(--primary-text, #000000); 
+	}
+
+    @include md{             
+        font-size: 36px;
+    }
+    @include xl{
+        
+    }
+}
+
+h3,
+.h3,
+.heading-3{
+    font-size: 24px;
+    font-family: var(--font-family-title);
+    color: var(--font-color-title, #000000); 
+
+    .small, small { 
+		color: var(--primary-text, #000000); 
+	}
+
+    @include md{
+        font-size: 28px;
+    }
+    @include xl{
+        font-size: 30px;
+    }
+}
+h4,
+.h4,
+.heading-4{
+    font-size: 20px;
+    font-family: var(--font-family-title);
+    color: var(--font-color-title, #000000); 
+
+    .small, small { 
+		color: var(--primary-text, #000000); 
+	}
+
+    @include md{
+        font-size: 22px;
+    }
+    @include xl{
+        font-size: 24px;
+    }
+}
+h5,
+.h5,
+.heading-5{
+    font-size: 16px;
+    font-family: var(--font-family-title);
+    color: var(--font-color-title, #000000); 
+    .small, small { 
+		color: var(--primary-text, #000000); 
+	}
+
+    @include md{
+        font-size: 18px;
+    }
+    @include xl{
+       
+    }
+}
+h6,
+.h6,
+.heading-6{
+    font-size: 12px; 
+    font-family: var(--font-family-title);
+    color: var(--font-color-title, #000000); 
+    .small, small { 
+		color: var(--primary-text, #000000); 
+	}
+
+    @include md{
+    }
+    @include xl{
+    }
+}
+
+label{
+    font-size: 16px;
+    
+    @include md{
+        font-size: 18px;
+    }
+}
+
+/* iHomefinder */
+
+#ihf-main-container div#areaPickerInputWrapper {
+    height: 50px !important;
+}
+
+#ihf-main-container .modal-dialog {
+    left: inherit !important;
+}
+
+/*******************************************************
+ *
+ * 10. Mlcalc.com calculators
+ *
+ *******************************************************/
+
+/* Make rates popup scrollable on devices with screens less than 761px wide */
+
+@media only screen and (max-width:760px) {
+
+    #MLCalcRatesHolder {
+        overflow: auto !important;
+        width: 100% !important;
+        min-width: 100% !Important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    #MLCalcRatesShader {
+        width: 100% !important;
+        min-width: 100% !important;
+        overflow: scroll !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+}
+
+/* Make mortgage calculator popup scrollable on devices with screens less than 741px wide */
+
+@media only screen and (max-width:740px) {
+
+    #MLCalcHolder {
+        overflow: auto !important;
+        width: 100% !important;
+        min-width: 100% !Important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    #MLCalcShader {
+        width: 100% !important;
+        min-width: 100% !important;
+        overflow: scroll !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+}

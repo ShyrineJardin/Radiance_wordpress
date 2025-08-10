@@ -1,0 +1,132 @@
+#inner-page-wrapper .container {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+#content .entry:before,
+#content .entry:after {
+  display: none !important;
+}
+
+.community-featured-image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.community-featured-image canvas {
+  width: 100%;
+  height: 230px;
+}
+.community-featured-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none !important;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.community-title {
+  display: none;
+}
+.community-title--mobile {
+  display: block;
+}
+.community-title h1,
+.community-title h2 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.community-content p {
+  margin: 0 0 24px;
+}
+.community-content p:last-child {
+  margin-bottom: 0;
+}
+.community-properties {
+  margin-top: 24px;
+}
+.community-cta {
+  width: 100%;
+  padding: 15px 0 0 0;
+}
+.community-cta a {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--aios-communities-primary-color, #000);
+  border: 2px solid var(--aios-communities-primary-color, #000);
+  transition: var(--transition, background-color 0.4s ease-in-out);
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+.community-cta a span {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.community-cta a:hover {
+  background-color: var(--aios-communities-cta-color, #997058);
+  color: #fff;
+}
+
+#content .community-title h1.entry-title {
+  padding: 0 0 28px;
+}
+#content p {
+  letter-spacing: 0.7px;
+  line-height: 1.8;
+}
+@media screen and (min-width: 744px) {
+  .community-featured-image canvas {
+    height: 345px;
+  }
+  .community-cta {
+    text-align: left;
+  }
+  #content .community-title h1.entry-title {
+    padding: 0 0 7px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .community-featured-image {
+    float: left;
+    width: 480px;
+    margin: 0 29px 0 0;
+  }
+  .community-title {
+    display: block;
+  }
+  .community-title--mobile {
+    display: none;
+  }
+  .community-content {
+    padding: 0 0 40px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .community-featured-image {
+    width: 680px;
+    margin: 0 39px 0 0;
+  }
+  .community-featured-image canvas {
+    height: 550px;
+  }
+  .community-content {
+    padding: 0 0 60px 0;
+  }
+  #content .community-title h1.entry-title {
+    padding: 0 0 15px;
+  }
+}

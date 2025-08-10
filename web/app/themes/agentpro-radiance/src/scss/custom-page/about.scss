@@ -1,0 +1,371 @@
+@use '../../mixins/media-queries' as *;
+
+.entry-title {
+  display: none;
+}
+
+
+.about-radiance {
+    &__container {
+        padding: 5px 4px 55px 4px; 
+
+        @include md {
+            padding: 25px 0 4px 0;
+        }
+
+        @include lg {
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column; 
+        gap: 36px;
+
+        @include md{
+            gap: 40px;
+        }
+
+        @include lg {
+            display: block;
+
+             > *:not(:last-child) {
+                margin-bottom: 2rem; 
+            }
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+        height: auto;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        max-width: 100%;
+
+        @include lg {
+            float: left;
+            aspect-ratio: auto;
+            height: 528px;
+            width: 396px; 
+            margin-right: 53px;
+            margin-bottom: 33px;
+        }
+
+        @include xl{
+            margin-bottom: 27px;
+            width: 596px;
+            height: 783px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+
+        @include md {
+        font-size: 52px;
+        }
+
+        @include xl {
+        font-size: 65px;
+        }
+    }
+
+    &__subtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+
+    @include md {
+        justify-content: space-between;
+    }
+
+    &-line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: var(--font-color-default);
+        align-self: center;
+
+        @include md {
+        width: auto;
+        }
+    }
+
+    &-text {
+        text-align: right;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        font-family: var(--font-family-default);
+        color: var(--font-color-default);
+        text-transform: uppercase;
+
+        @include md {
+        color: #000;
+        font-size: 18px;
+        letter-spacing: 1.8px;
+        }
+    }
+    }
+
+    &__paragraph{
+                
+        p {
+            margin-top: 0 !important;
+        }
+
+        .paragraph-title {
+            display: block;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 13px; 
+
+        @include md{
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        @include lg{
+            justify-content: center;
+            gap: 31px;
+        }
+
+        &-item {
+
+            &--tel, &--email {
+                display: flex;
+                gap: 7px;
+                align-items: center;
+            }
+
+            &--socials {
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+            }
+        }
+    }
+
+}
+.hpcta{
+    $self: &;
+
+    &__container{
+        padding: 40px 4px 72px 4px;
+
+        @include md{
+            padding: 80px 0 ;
+        }
+
+        @include lg{
+            padding: 60px 0;
+        }
+
+        @include xl{
+            padding: 120px 0;
+        }
+    }
+
+    &__items{
+        display: flex;
+        flex-flow: column;
+        gap: 52px;
+
+        @include md{
+            flex-flow: row;
+            justify-content: center;
+            gap: 19px;
+        }
+
+        @include lg{
+            gap: 22px;
+        }
+
+        @include xl{
+            gap: 95px;
+        }
+    }
+    &__item{
+        width: 100%;
+
+        a{
+            border: 1px solid var(--primary);
+            display: flex;
+            width: 100%;
+            height: 120px;
+            padding: 10px 20px;
+            align-items: center;
+            flex-shrink: 0;
+            color: #000;
+            transition: var(--transition);
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+
+            > span{
+                font-family: var(--font-family-title);
+                color: #000;
+                font-size: 26px; 
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+                position: relative;
+                z-index: 20;
+                transition: var(--transition);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                @include md{
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+
+                @include lg{
+                    font-size: 26px;
+                    line-height: 25px;
+                }
+                @include xl{
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                 small{
+                    font-family: var(--font-family-default);
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    letter-spacing: 2.8px;
+                    display: block;
+                    transition: var(--transition);
+                    
+                    @include md{
+                        font-size: 12px;
+                        letter-spacing: 2.4px;
+                        line-height: 20px;
+                    }
+
+                    @include lg{
+                        font-size: 14px;
+                        letter-spacing: 2.8px;
+                        line-height: 25px;
+                    }
+
+                    @include xl{
+                        font-size: 16px;
+                        letter-spacing: 3.2px;
+                    }
+                }
+            }
+
+            &::after{
+                display: block;
+                content: "";
+                width: 2px;
+                height: 100px;
+                background: #CCC;
+                position: absolute;
+                bottom: -40px;
+                right: 26.67px;
+                z-index: 25;
+
+                @include md{
+                    height: 75px;
+                    right: 18.67px;
+                    bottom: -30px;
+                }
+
+                @include lg{
+                    height: 100px;
+                    bottom: -40px;
+                    right: 26.67px;
+                }
+                @include xl{
+                    right: 32px;
+                }
+            }
+
+            &::before{
+                width: 100%;
+                height: 100%;
+                content: "";
+                display: block;
+                background: var(--primary);
+                top: 0;
+                left: 0;
+                position: absolute;
+                transition: var(--transition);
+                opacity: 0;
+            }
+
+            &:hover{
+                color: #FFF;
+                > span{
+                    color: #FFF;
+                }
+                small{
+                    color: #FFF;
+                }
+                &::before{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // &__label-top{
+    //     font-family: var(--font-family-default);
+    //     color: #000;
+    //     font-size: 14px;
+    //     font-weight: 400;
+    //     line-height: 25px;
+    //     letter-spacing: 2.8px;
+    //     display: block;
+    //     transition: var(--transition);
+        
+    //     @include md{
+    //         font-size: 12px;
+    //         letter-spacing: 2.4px;
+    //         line-height: 20px;
+    //     }
+
+    //     @include lg{
+    //         font-size: 14px;
+    //         letter-spacing: 2.8px;
+    //         line-height: 25px;
+    //     }
+
+    //     @include xl{
+    //         font-size: 16px;
+    //         letter-spacing: 3.2px;
+    //     }
+    // }
+}

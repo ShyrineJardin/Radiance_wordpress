@@ -1,0 +1,64 @@
+	/* Header 2A */
+	.amh-header-buttons.amh-2a .amh-center {
+		display: none;
+	}
+
+	.amh-header-buttons.amh-2a .amh-navigation-trigger {
+		width: 100%;
+		max-width: 34%;
+		font-size:0;
+	}
+
+		.amh-header-buttons.amh-2a .amh-navigation-trigger {
+			text-align: left;
+			padding: 17px 17px 17px 24px;
+		}
+
+		.amh-header-buttons.amh-2a .amh-navigation-trigger span {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 18px;
+			line-height: 1;
+			/* font-size: 5.7vw; */
+			font-weight: 700;
+			color: #4d4d4d;
+			text-transform: uppercase;
+		}
+
+		.amh-header-buttons.amh-2a .amh-navigation-trigger .ai-font-menu span {
+			margin-left:9px;
+		}
+
+		.amh-header-buttons.amh-2a .amh-navigation-trigger span * {
+			vertical-align:top;
+			display:inline-block;
+		}
+
+	.amh-header-buttons.amh-2a .amh-header-right-btn {
+		width: 65.75%;
+		float: right;
+		text-align: right;
+		padding: 15px 19px 15px 5px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+
+		.amh-header-buttons.amh-2a .amh-header-right-btn.amh-dual-phone{
+			font-size: 14px;
+		}
+
+		.amh-header-buttons.amh-2a .amh-header-right-btn .amh-phone-text,
+		.amh-header-buttons.amh-2a .amh-header-right-btn .amh-phone-text a {
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: 700;
+			color: #4d4d4d;
+		}
+
+	.amh-header-buttons.amh-2a .amh-header-right-btn .amh-phone-secondary{
+		border-left: 1px solid #4d4d4d;
+		margin-left: 15px;
+		padding-left: 15px;
+	}

@@ -1,0 +1,75 @@
+stages:
+  - build
+
+cache:
+  paths:
+    - web/app/uploads/
+
+staging:
+  stage: build
+  variables:
+    GIT_CLONE_PATH: "$CI_BUILDS_DIR/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME"
+    GIT_CLEAN_FLAGS: -ffdx -e web/app/
+  tags:
+    - ec2-54-219-52-205.us-west-1-bedrock
+  environment:
+    name : staging
+  only:
+    - develop
+  script:
+    - cat "$ENV" > .env
+    - cat "$COMPOSER_AUTH_JSON" > auth.json
+    - composer install --prefer-dist --no-interaction --no-progress --optimize-autoloader
+    - npm install
+    - npm run build
+    - mkdir -p tmp
+  after_script:
+    - |
+      curl -X POST "https://api.cloudflare.com/client/v4/zones/ee83ebdeef4e29cc2f16145025c73224/purge_cache" -H "Authorization: Bearer i0QGCq0ei-1g1WhUy69HDi37NYfh3TpR41wpzcRk" --data '{"files":["https://staging-ap-radiance.agentimage.com"]}'
+
+
+redesign:
+  stage: build
+  variables:
+    GIT_CLONE_PATH: "$CI_BUILDS_DIR/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME"
+    GIT_CLEAN_FLAGS: -ffdx -e web/app/
+  tags:
+    - ec2-54-219-52-205.us-west-1-bedrock
+  environment:
+    name : redesign
+  only:
+    - redesign
+  script:
+    - cat "$ENV" > .env
+    - cat "$COMPOSER_AUTH_JSON" > auth.json
+    - composer install --prefer-dist --no-interaction --no-progress --optimize-autoloader
+    - npm install
+    - npm run build
+    - mkdir -p tmp
+  after_script:
+    - |
+      curl -X POST "https://api.cloudflare.com/client/v4/zones/ee83ebdeef4e29cc2f16145025c73224/purge_cache" -H "Authorization: Bearer i0QGCq0ei-1g1WhUy69HDi37NYfh3TpR41wpzcRk" --data '{"files":["https://redesign-ap-radiance.agentimage.com"]}'
+
+
+
+production:
+  stage: build
+  variables:
+    GIT_CLONE_PATH: "$CI_BUILDS_DIR/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME"
+    GIT_CLEAN_FLAGS: -ffdx -e web/app/
+  tags:
+    - ec2-54-219-52-205.us-west-1-bedrock
+  environment:
+    name : production
+  only:
+    - production
+  script:
+    - cat "$ENV" > .env
+    - cat "$COMPOSER_AUTH_JSON" > auth.json
+    - composer install --prefer-dist --no-interaction --no-progress --optimize-autoloader
+    - npm install
+    - npm run build
+    - mkdir -p tmp
+  after_script:
+    - |
+      curl -X POST "https://api.cloudflare.com/client/v4/zones/ee83ebdeef4e29cc2f16145025c73224/purge_cache" -H "Authorization: Bearer i0QGCq0ei-1g1WhUy69HDi37NYfh3TpR41wpzcRk" --data '{"files":["https://ap-radiance.agentimage.com"]}'

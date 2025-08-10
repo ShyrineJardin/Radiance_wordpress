@@ -1,0 +1,149 @@
+#ip-equinox-about  .ip-equinox-about{
+
+}
+#ip-equinox-about  .ip-equinox-about__container {
+}
+
+
+#ip-equinox-about  .ip-equinox-about__photo {
+    position: relative;
+    max-width: 408px;
+    margin: 0 auto;
+}
+
+#ip-equinox-about  .ip-equinox-about__photo--wrap{
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    padding-left: 72px;
+    padding-top: 60px;
+    flex-shrink: 0;
+}
+#ip-equinox-about  .ip-equinox-about__photo img {
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 20;
+}
+#ip-equinox-about  .ip-equinox-about__photo--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100);
+}
+#ip-equinox-about  .ip-equinox-about__photo--overlay::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    opacity: 0.8;
+}
+#ip-equinox-about  .ip-equinox-about__content {
+    width: 100%;
+    padding: 40px 0 0;
+}
+#ip-equinox-about .ip-equinox-about__content .about__title{
+    padding-bottom: 7px;
+}
+#ip-equinox-about .ip-equinox-about__content .about__title h2 {
+    display: inline-block;
+    line-height: 1.2;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+#ip-equinox-about .ip-equinox-about__content .about__title h2 small {
+    font-size: 14px;
+    display: block;
+    color: var(--primary-text, #000000);
+    font-family: var(--font-family-default);
+    text-transform: uppercase;
+    padding: 8px 0 0;
+    letter-spacing: 1.96px;
+    font-weight: 300;
+
+
+}
+#ip-equinox-about .ip-equinox-about__content .about__title h2 strong {
+    display: block;
+    font-size: 36px;
+    font-family: var(--font-family-title);
+    color: var(--primary-text, #000000);
+    font-weight: 400;
+}
+
+
+#ip-equinox-about .ip-equinox-about__content p {
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+
+#ip-equinox-about .ip-equinox-about__content h4{
+    font-size: 24px;
+    margin: 0;
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+@media (min-width:744px) {
+
+    #ip-equinox-about .ip-equinox-about__content .about__title h2 strong  {
+        font-size: 40px;
+    }
+
+    #ip-equinox-about .ip-equinox-about__content h4{
+        font-size: 36px;
+        margin: 0;
+    }
+
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1024px) {
+  /* Welcome */
+  #ip-equinox-about .ip-equinox-about__container {
+    display: flex;
+    align-items: flex-start;
+  }
+  #ip-equinox-about .ip-equinox-about__photo {
+    flex-shrink: 0;
+    min-width: 461px;
+  }
+  #ip-equinox-about .ip-equinox-about__content {
+    text-align: left;
+    margin-left: 40px;
+    padding: 0;
+  }
+  
+
+}
+
+/* hi-res laptops and desktops */ 
+@media (min-width:1280px) { 
+
+    #ip-equinox-about .ip-equinox-about__content .about__title h2 strong  {
+        font-size: 55px;
+    }
+
+    #ip-equinox-about .ip-equinox-about__photo {
+        max-width: 536px;
+        min-width: 536px;
+    }
+    #ip-equinox-about .ip-equinox-about__content {
+        margin-left: 120px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        padding: 16px 0;
+    }
+}

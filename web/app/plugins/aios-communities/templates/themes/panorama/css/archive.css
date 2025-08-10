@@ -1,0 +1,237 @@
+.no-communities-found {
+    font-size: 16px
+}
+
+.page-template-template-fullwidth .aios-communities-page {
+    padding: 30px 0 0
+}
+
+.page-template-template-fullwidth .aiosCommunitiesBeacon__container {
+    padding: 0 20px
+}
+
+.aiosCommunitiesPanorama {
+    padding: 10px 0 0
+}
+
+.aiosCommunitiesPanorama__row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -6px
+}
+
+.aiosCommunitiesPanorama__col {
+    width: calc(100% / 5);
+    padding: 6px
+}
+
+.aiosCommunitiesPanorama__col a {
+    position: relative;
+    display: block
+}
+
+.aiosCommunitiesPanorama__col a:hover .aiosCommunitiesPanorama__img img {
+    filter: grayscale(1)
+}
+
+.aiosCommunitiesPanorama__col a:hover .aiosCommunitiesPanorama__img::before {
+    opacity: .6
+}
+
+.aiosCommunitiesPanorama__col a:hover .aiosCommunitiesPanorama__info {
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.aiosCommunitiesPanorama__col a:hover .aiosCommunitiesPanorama__link {
+    margin-top: 15px;
+    height: 48px;
+    transform: none;
+    display: block
+}
+
+.aiosCommunitiesPanorama__col.aios-communities-show-overlay .aiosCommunitiesPanorama__img::before {
+    z-index: 5;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--aios-communities-overlay-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: var(--aios-communties-overlay-opacity)
+}
+
+.aiosCommunitiesPanorama__col.aios-communities-has-text-shadow .aiosCommunitiesPanorama__info .aiosCommunitiesPanorama__name {
+    text-shadow: 1px 2px 2px #000
+}
+
+.aiosCommunitiesPanorama__img {
+    position: relative;
+    z-index: 1
+}
+
+.aiosCommunitiesPanorama__img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: .6s;
+    margin: 15px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    z-index: 6
+}
+
+.aiosCommunitiesPanorama__img::before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--aios-communities-primary-color);
+    z-index: 1;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .6s
+}
+
+.aiosCommunitiesPanorama__img canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-height: 250px
+}
+
+.aiosCommunitiesPanorama__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity .6s, filter .6s, transform .6s
+}
+
+.aiosCommunitiesPanorama__info {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    padding: 60px 30px;
+    text-align: center;
+    transition: top .4s, transform .4s
+}
+
+.aiosCommunitiesPanorama__info .aiosCommunitiesPanorama__name {
+    position: relative;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.aiosCommunitiesPanorama__info .aiosCommunitiesPanorama__link {
+    position: relative;
+    display: block;
+    height: 0;
+    transform: scale(0);
+    overflow: hidden;
+    transition: height .6s, transform .6s, margin .6s
+}
+
+.aiosCommunitiesPanorama__info .aiosCommunitiesPanorama__link span {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: 0 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 48px;
+    margin: 0;
+    padding: 18px 25px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: var(--aios-communities-primary-color);
+    color: #fff;
+    transition: color .6s, border .6s, background .6s;
+    max-width: 150px
+}
+
+.aiosCommunitiesPanorama .ai-communities-pagination {
+    padding: 50px 0
+}
+
+.aiosCommunitiesPanorama .ai-communities-pagination ul {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.aiosCommunitiesPanorama .ai-communities-pagination ul li {
+    position: relative;
+    display: block;
+    margin: 15px 0;
+    padding: 0 30px
+}
+
+.aiosCommunitiesPanorama .ai-communities-pagination ul li a i {
+    transition: .4s ease-in-out;
+    width: 46px;
+    height: 44px;
+    font-style: normal;
+    color: #898989
+}
+
+.aiosCommunitiesPanorama .ai-communities-pagination ul li a:hover,
+.aiosCommunitiesPanorama .ai-communities-pagination ul li a:hover i {
+    color: var(--aios-communities-primary-color)
+}
+
+@media only screen and (max-width:1199px) {
+    .aiosCommunitiesPanorama__col {
+        width: calc(100% / 4)
+    }
+    .aiosCommunitiesPanorama__info .aiosCommunitiesPanorama__name {
+        font-size: 18px
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .aiosCommunitiesPanorama__col {
+        width: calc(100% / 2)
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    .aiosCommunitiesPanorama__col {
+        width: 100%;
+    }
+
+    .aiosCommunitiesPanorama__info .aiosCommunitiesPanorama__name {
+        font-size: 18px
+    }
+    
+}
+
+@media only screen and (max-width:320px) {
+    .aiosCommunitiesPanorama__col {
+        width: 100%
+    }
+}

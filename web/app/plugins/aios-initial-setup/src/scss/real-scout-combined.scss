@@ -1,0 +1,319 @@
+@use 'mixins/mediaqueries' as *;
+
+.rs-combined {
+    $wrapper: &;
+
+    &-bg {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-mobile-only {
+        @include md {
+            display: none;
+        }
+    }
+
+    &-desktop-only {
+        display: none; 
+
+        @include md {
+            display: inline-block;
+        }
+    }
+
+    &-subtitle {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        padding: 18px 0;
+
+        font-weight: 600;
+        font-size: 18px !important;
+        line-height: 1;
+        color: #00194F;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @include xl {
+            padding: 0;
+            font-size: 28px !important;
+            line-height: 1.2;
+        }
+
+        span:last-child {
+            background: linear-gradient(45deg, #7ACAFF 10.82%, #4882FF 97.04%);
+            max-width: 189px;
+            width: 100%;
+            height: 4px;
+            margin-bottom: 3px;
+
+            @include xl {
+                max-width: 322px;
+                margin-bottom: 8px;
+            }
+        }
+    } 
+
+    &-container {
+        h2 {
+            font-weight: 600 !important;
+            font-size: 24px !important;
+            line-height: 1.2;
+            color: inherit;
+            margin: 0  !important;
+
+            @include lg {
+                font-size: 34px !important;
+                line-height: 1.1;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px !important;
+            line-height: 1.7;
+            letter-spacing: -0.02em;
+            color: inherit;
+            margin: 8px 0 0  !important;
+        }
+    }
+
+    &-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 20px;
+        margin-top: 16px;
+
+        min-width: 160px;
+        min-height: 52px;
+
+        background: #21ADF4;
+        border-radius: 10px;
+
+        font-weight: 600;
+        font-size: 16px !important;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--font-color-rs-btn, #FFFFFF) !important;
+
+        @include lg {
+            margin-top: 20px;
+        }
+
+        &:hover {
+            color: var(--font-color-rs-btn, #FFFFFF) !important;
+        }
+    }
+
+    &-pby {
+        display: flex;
+        align-items: flex-end;
+        gap: 6px;
+        margin-top: 16px;
+
+        @include lg {
+            margin-top: 20px;
+        }
+
+        span {
+            font-size: 11px !important;
+            line-height: 1.6;
+            color: inherit;
+            text-transform: uppercase;
+        }
+
+        img {
+            max-width: 111px;
+            width: 100%;
+        }
+    }
+
+    
+
+    &-marketing {
+        &-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            @include md {
+                width: 50%;
+            }
+        }
+    }
+
+    &-vone {
+        position: relative;
+        overflow: hidden;
+
+        #{$wrapper}-container {
+            @include md {
+                display: flex;
+            }
+
+            @include xl {
+                max-width: 1440px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            #{$wrapper} {
+                &-content {
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    @include md {
+                        flex-grow: 1;
+                        flex-basis: 0;
+                    }
+                }
+
+                &-data {
+                    position: relative;
+                    z-index: 5;
+                    padding: 24px 24px 0;
+                    max-width: 287px;
+                    width: 100%;
+
+                    @include lg {
+                        padding: 36px 36px 0;
+                        max-width: 100%;
+                    }
+
+                    @include xl {
+                        padding: 46px;
+                    }
+                }
+
+                &-marketing {
+                    position: relative;
+                    color: #FFFFFF;
+                    
+                    @include lg {
+                        padding-bottom: 172px;
+                    }
+
+                    h2 {
+                        @include lg {
+                            max-width: 424px;
+                            font-size: 28px !important;
+                            line-height: 1.2;
+                        }
+
+                        @include xl {
+                            max-width: 541px;
+                            font-size: 34px !important;
+                            line-height: 1.1;
+                        }
+                    }
+
+                    &-background {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    &-device {
+                        position: relative;
+                        z-index: 2;
+                        padding: 8px 24px 0;
+
+                        @include md {
+                            padding-top: 0;
+                        }
+
+                        @include lg {
+                            padding: 0;
+                            position: absolute;
+                            right: 36px;
+                            bottom: 0;
+                            max-width: 362px;
+                        }
+
+                        @include xl {
+                            max-width: none;
+                            right: 46px;
+                            left: 46px;
+                        }
+
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                &-hworth {
+                    position: relative;
+                    color: #1C1E26;
+                    
+                    @include lg {
+                        padding-bottom: 112px;
+                    }
+
+                    p {
+                        @include lg {
+                            max-width: 289px;
+                        }
+                    }
+
+                    &-background {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 0;
+                        width: 282px;
+                        height: auto;
+                    }
+
+                    &-device {
+                        position: relative;
+                        z-index: 2;
+                        padding: 36px 0 6px 24.8vw;
+
+                        @include md {
+                            padding-left: 12.097vw;
+                            padding-bottom: 0;
+                        }
+
+                        @include lg {
+                            padding: 0;
+                            position: absolute;
+                            left: 49%;
+                            bottom: 20px;
+                        }
+
+                        @include xl {
+                            left: 43%;
+                        }
+
+                        img {
+                            display: block;
+                            width: 110%;
+                            height: auto;
+
+                            @include lg {
+                                width: 140%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

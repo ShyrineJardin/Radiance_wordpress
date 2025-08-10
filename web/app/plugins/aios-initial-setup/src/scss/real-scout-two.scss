@@ -1,0 +1,232 @@
+@use 'mixins/mediaqueries' as *;
+
+.rs-single {
+    $wrapper: &;
+
+    &-vtwo {
+        overflow: hidden;
+        position: relative;
+        
+        #{$wrapper} {
+            &-bg {
+                &-default {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 70.205%;
+
+                    @include md {
+                        width: 65.322%;
+                        height: 100%;
+                    }
+
+                    @include lg {
+                        width: 69.238%
+                    }
+
+                    @include xl {
+                        width: 65.234%
+                    }
+                }
+
+                &-accent {
+                    position: absolute;
+                    top: 70.205%;
+                    left: 0;
+                    width: 100%;
+                    height: 29.795%;
+
+                    @include md {
+                        top: 0;
+                        right: 0;
+                        left: auto;
+                        width: 34.678%;
+                        height: 100%;
+                    }
+
+                    @include lg {
+                        width: 30.762%
+                    }
+
+                    @include xl {
+                        width: 34.766%
+                    }
+                }
+            }
+
+            &-container {
+                position: relative;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                gap: 31px;
+                padding: 48px 0 60px;
+
+                @include md {
+                    flex-direction: row;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    gap: 0;
+                    padding-top: 60px;
+                }
+
+                @include lg {
+                    padding-top: 31px;
+                    padding-bottom: 55px;
+                }
+
+                @include xl {
+                    align-items: center;
+                    padding-top: 27px;
+                    padding-bottom: 27px;
+                    max-width: 1400px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            &-device {
+                display: inline-flex;
+                justify-content: flex-end;
+
+                @include md {
+                    width: 43%;
+                }
+
+                @include lg {
+                    width: auto;
+                }
+
+                img {
+                    max-width: none;
+                    width: 110%;
+                    height: auto;
+                    margin: 0;
+                }
+            }
+
+            &-inner {
+                display: inline-flex;
+                justify-content: center;
+                padding-right: 46px;
+                padding-left: 34px;
+
+                @include md {
+                    padding-right: 81px;
+                    padding-left: 0;
+                    width: 57%;
+                }
+
+                @include lg {
+                    padding-right: 182px;
+                    padding-left: 91px;
+                    width: auto;
+                }
+
+                @include lg {
+                    padding-right: 239px;
+                    padding-left: 73px;
+                    width: auto;
+                }
+            }
+
+            &-content {
+                position: relative;
+                padding: 24px;
+                color: #626262;
+
+                @include md {
+                    max-width: 326px;
+                    min-width: 326px;
+                }
+
+                @include lg {
+                    max-width: 379px;
+                    min-width: 379px;
+                    padding: 26px 35px;
+                }
+
+                @include xl {
+                    max-width: 471px;
+                    min-width: 471px;
+                }
+
+                * {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: #FFFFFF;
+                    border-radius: 4px;
+                    z-index: 1;
+                }
+
+                &::after {
+                    top: 12px;
+                    right: -12px;
+                    bottom: -12px;
+                    left: 12px;
+                    z-index: 0;
+
+                    background: linear-gradient(90deg, #92C2FF 0%, #0071FF 43.5%, #151A26 100%);
+                }
+
+                h2 {
+                    font-size: 20px !important;
+                    line-height: 1.4;
+                    color: #000000;
+
+                    @include md {
+                        font-size: 24px !important;
+                        line-height: 1.2;
+                    }
+
+                    @include lg {
+                        font-size: 28px !important;
+                        line-height: 1.4;
+                    }
+
+                    @include xl {
+                        font-size: 40px !important;
+                        line-height: 1.2;
+                    }
+
+                    br {
+                        @include xl {
+                            display: none;
+                        }
+                    }
+                }
+
+                p {
+                    max-width: 325px;
+                    margin-top: 12px;
+                    font-size: 14px !important;
+                    line-height: 1.7;
+
+                    @include md {
+                        font-size: 15px !important;
+                        line-height: 1.6;
+                    }
+
+                    @include xl {
+                        max-width: 340px;
+                    }
+                }
+            }
+
+            &-btn {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

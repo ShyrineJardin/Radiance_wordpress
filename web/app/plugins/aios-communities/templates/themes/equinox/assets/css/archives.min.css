@@ -1,0 +1,143 @@
+.aiosCommunitiesEquinox__container {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+}
+.aiosCommunitiesEquinox--title {
+  text-align: center;
+}
+.aiosCommunitiesEquinox--title .archive-title {
+  margin-bottom: 32px;
+}
+.aiosCommunitiesEquinox__items {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  padding: 0 22px;
+}
+.aiosCommunitiesEquinox__item a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 38px;
+  background: linear-gradient(120.63deg, var(--aios-communities-cta-color, #997058) 4.65%, rgb(34, 34, 34) 66.02%);
+}
+.aiosCommunitiesEquinox__item a canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.aiosCommunitiesEquinox__item a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  transition: var(--transition, opacity 0.4s ease-in-out);
+}
+.aiosCommunitiesEquinox__item a::before, .aiosCommunitiesEquinox__item a::after {
+  content: "";
+  position: absolute;
+}
+.aiosCommunitiesEquinox__item a::before {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  transition: var(--transition, opacity 0.4s ease-in-out);
+}
+.aiosCommunitiesEquinox__item a::after {
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  z-index: 4;
+  padding: 1px;
+  border-radius: 38px;
+  background: linear-gradient(to right, #C9A89C 0%, rgba(201, 168, 156, 0.4) 40%, #C9A89C 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: var(--transition, opacity 0.4s ease-in-out);
+}
+.aiosCommunitiesEquinox__item a:hover::before {
+  opacity: 0;
+}
+.aiosCommunitiesEquinox__item a:hover::after {
+  opacity: 1;
+}
+.aiosCommunitiesEquinox__item a:hover img {
+  opacity: 0.2;
+}
+.aiosCommunitiesEquinox__item--title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  padding: 0 30px 24px;
+  font-weight: var(--label-font-weight, 400);
+  font-size: var(--label-font-size, 14px);
+  line-height: var(--label-line-height, 1.5);
+  letter-spacing: var(--label-letter-spacing, 0.12em);
+  text-transform: var(--label-text-transform, uppercase);
+  text-align: center;
+  color: var(--label-alt-color, #FFFFFF);
+}
+.aiosCommunitiesEquinox__pagination {
+  margin-top: 60px;
+}
+.aiosCommunitiesEquinox__pagination ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.aiosCommunitiesEquinox__pagination li .page-numbers {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--pagination-font-weight, 600);
+  font-size: var(--pagination-font-size, 16px);
+  line-height: var(--pagination-line-height, 12%);
+  color: var(--pagination-color, #000000);
+  text-align: center;
+  border: 1px solid #AAAAAA;
+  border-color: var(--pagination-border-color, #AAAAAA);
+  transition: var(--transition, all 0.4s ease-in-out);
+}
+.aiosCommunitiesEquinox__pagination li .page-numbers.current, .aiosCommunitiesEquinox__pagination li .page-numbers:not(.dots):hover {
+  background: var(--pagination-background-hover, #67483D);
+  color: var(--pagination-color-hover, #fff);
+  border-color: var(--pagination-border-color-hover, #67483D);
+}
+.aiosCommunitiesEquinox__pagination li .page-numbers.dots {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.aiosCommunitiesEquinox__pagination li .page-numbers .prev,
+.aiosCommunitiesEquinox__pagination li .page-numbers .next {
+  font-size: var(--pagination-arrow-font-size, 14px);
+}
+@media screen and (min-width: 744px) {
+  .aiosCommunitiesEquinox__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1024px) {
+  .aiosCommunitiesEquinox__items {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0;
+  }
+}

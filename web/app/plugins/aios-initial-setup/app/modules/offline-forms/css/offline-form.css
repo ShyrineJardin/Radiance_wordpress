@@ -1,0 +1,70 @@
+.aios-offline-forms {
+    position: fixed;
+    z-index: 500;
+    
+    background: #009bbb;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    bottom: -50%;
+    opacity: 0;
+}
+
+.aios-offline-forms span.aff-close {
+    position: absolute;
+    top: -12px;
+    right: 1%;
+    background: #fff;
+    border-radius: 50%;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 28px;
+    font-size: 10px;
+    background: #131313;
+    cursor: pointer;
+}
+
+.aios-offline-forms .aios-notice-message {
+    display: block;
+}
+
+.aios-offline-forms .aios-notice-message .aios-notice-actions {
+    position: relative;
+    margin-top: 7px;
+}
+
+.aios-offline-forms .aios-notice-message .aios-response {
+    font-weight: 700;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 5px;
+    color: #009bbb;
+    padding: 4px 7px;
+    display: inline-block;
+    vertical-align: middle;
+
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+}
+
+.aios-offline-forms .aios-notice-message .aios-response:hover {
+    background: #e6e6e6;
+}
+
+@media only screen and (max-width: 991px) {
+    .aios-offline-forms {
+        width: 90%;
+        left: 50%;
+        margin-left: -45%;
+    }
+}

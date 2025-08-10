@@ -1,0 +1,12 @@
+@use "variables" as *;
+@use "functions" as *;
+
+.aios-custom-customizer {
+  .form-picker {
+    .wp-picker-container {
+      .wp-picker-holder {
+        top: 80px !important;
+      }
+    }
+  }
+}

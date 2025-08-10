@@ -1,0 +1,265 @@
+
+#inner-page-wrapper > .container {
+    width: 100%;
+    padding: 0;
+}
+
+/** Contact **/
+#ai-classic-contact-wrap{
+    /*padding-top: 100px;*/
+    padding-bottom: 80px;
+}
+
+.ai-classic-contact-info-wrap{
+    position: relative;
+}
+.ai-classic-contact-info-wrap{}
+.ai-classic-contact-info-wrap:after {
+    display: block;
+    width: 100%;
+    height: 472px;
+    content: "";
+    background: var(--primary);
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.ai-classic-contact-info-wrap .container{
+    position: relative;
+    z-index: 6;
+}
+
+.ai-classic-contact-infos{
+    display: flex;
+    background: var(--background-color, #ffffff);
+}
+#ai-classic-contact-wrap .ai-classic-contact-image{
+    width: 42.89%;
+    border: 10px solid var(--background-color, #ffffff);
+    flex-shrink: 0;
+}
+#ai-classic-contact-wrap .ai-classic-contact-image canvas{
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+}
+
+#ai-classic-contact-wrap .ai-classic-contact-contents {
+    width: 57.11%;
+    padding: 0 5% 0 5%;
+}
+#ai-classic-contact-wrap .ai-classic-contact-contents h2{
+    line-height: 1.1;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    padding: 36px 0;
+    margin: 0;
+}
+
+#ai-classic-contact-wrap .ai-classic-contact-contents p {
+    line-height: 1.7;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+.ai-classic-contact-contents .wpcf7 {
+    margin-top: 10px;
+}
+.ai-classic-contact-contents .wpcf7 label{
+    font-size: 14px;
+    border: none;
+    font-weight: 500;
+    display: block;
+    margin-top: 23px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.ai-classic-contact-contents .wpcf7 input{
+    font-size: 14px;
+    height: 22px;
+    border: none;
+    border-bottom: 1px solid var(--font-color-default);
+    width: 100%;
+}
+
+.ai-classic-contact-contents .wpcf7 textarea{
+    font-size: 14px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid var(--font-color-default);
+    width: 100%;
+    resize: none;
+}
+.ai-classic-contact-contents .wpcf7 input::placeholder,
+.ai-classic-contact-contents .wpcf7 textarea::placeholder{
+    font-size: 0;
+}
+
+.ai-classic-contact-contents .wpcf7 input[type="submit"]{
+    width: 100%;
+    border: solid 1px var(--primary);
+    background: transparent;
+    height: 57px;
+    font-size: 15px;
+    color: var(--primary, #000000);
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 182px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+.ai-classic-contact-contents .wpcf7 input[type="submit"]:hover{
+    background: var(--primary, #000000);
+    color: var(--background-color, #ffffff);
+}
+.ai-classic-contact-contents .wpcf7-not-valid-tip {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: auto;
+    transform: translateY(-50%);
+    width: auto;
+    font-size: 14px;
+}
+
+.ai-classic-contact-contents .wpcf7-response-output {
+    margin: 0 !important;
+    padding: 10px !important;
+    font-size: 14px;
+    text-align: center;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations {
+    margin-top: 40px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li{
+    font-size: 16px;
+    padding: 10px 0;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li:first-child{
+    display:flex;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li i{
+    color: var(--primary);
+    font-size: 16px;
+    margin-right: 10px;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li i.ai-font-envelope{
+    font-style: normal !important;
+    font-size: 13px;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li span {
+    margin: 0 10px;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li span:first-child{
+    margin-left: 0;
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li:last-child{
+
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li:last-child a {
+    display: inline-block;
+    vertical-align: top;
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 0 6px;
+    transition: all .3s linear;
+
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li:last-child a:hover{
+    color: var(--background-color, #ffffff);
+    border-color: var(--primary);
+    background: var(--primary);
+}
+#ai-classic-contact-wrap .ai-classic-contact-informations li:last-child a:first-child{
+    margin-left: 0;
+}
+
+.ai-classic-contact-map .ai-classic-contact-map-wrap iframe {
+    display: block;
+    width: 100%;
+}
+
+.ai-classic-contact-map{
+    position: relative;
+    padding-top: 55px;
+}
+.ai-classic-contact-map .container{
+    position: relative;
+    z-index: 6;
+}
+
+.ai-classic-contact-map:after{
+    display: block;
+    width: 100%;
+    height: 229px;
+    content: "";
+    background: var(--primary);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.ai-classic-contact-map .ai-classic-contact-map-wrap{
+    position: relative;
+    border: 10px solid var(--background-color, #ffffff);
+}
+.ai-classic-contact-map .ai-classic-contact-map-wrap img{
+    display: block;
+    width: 100%;
+}
+
+/* iPad(landscape) | iPad(landscape) | Galaxy Tab 4 (landscape) | Galaxy Tab 3 (landscape) */
+@media only screen and (max-width: 1199px) {
+    #ai-classic-contact-wrap .ai-classic-contact-contents{
+        padding-bottom: 30px    ;
+    }
+    #ai-classic-contact-wrap .ai-classic-contact-contents h2{
+        font-size: 32px;
+    }
+}
+/* iPad(portrait) | Galaxy Tab 4(portrait)  */
+@media only screen and (max-width: 991px) {
+    #ai-classic-contact-wrap {
+        padding-top: 40px;
+    }
+    .ai-classic-contact-infos {
+        display: block;
+    }
+    #ai-classic-contact-wrap .ai-classic-contact-image{
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    #ai-classic-contact-wrap .ai-classic-contact-contents {
+        width: 100%;
+    }
+    #ai-classic-contact-wrap .ai-classic-contact-contents h2 {
+        font-size: 25px;
+    }
+    .ai-classic-contact-map{
+        padding-bottom: 50px;
+    }
+    .ai-classic-contact-map:after{
+        height: 100%;
+    }
+}
+/* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */
+@media only screen and (max-width: 767px) {
+
+}
+/* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */
+@media only screen and (max-width: 480px) {
+
+}

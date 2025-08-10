@@ -1,0 +1,181 @@
+#inner-page-wrapper {
+    padding: 0;
+}
+#inner-page-wrapper > .container {
+    width: 100%;
+    padding: 0;
+}
+#ai-modern-community-details {
+    position: relative;
+    margin-top: 50px;
+}
+#ai-modern-community-details .ai-modern-community-details-entry {
+    position: relative;
+    padding: 0 50px;
+    overflow: hidden;
+}
+#ai-modern-community-details .ai-modern-community-details-entry .container{
+    width: 100%;
+}
+#ai-modern-community-details .ai-modern-community-details-entry:after,
+#ai-modern-community-details .ai-modern-community-details-entry:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+#ai-modern-community-details .ai-modern-community-details-entry > .container {
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+#ai-modern-community-details .ai-modern-community-details-main {
+    position: relative;
+    padding-left: 150px;
+    padding-bottom: 30px;
+}
+#ai-modern-community-details.ai-modern-no-photo .ai-modern-community-details-main {
+    padding-left: 0;
+}
+#ai-modern-community-details .ai-modern-community-details-title {
+    position: relative;
+    margin-top: 98px;
+}
+#ai-modern-community-details .ai-modern-community-details-title h2 {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 45px;
+}
+#ai-modern-community-details .ai-modern-community-details-title h2 span {
+    display: block;
+    line-height: 1.1;
+    color: #212121;
+}
+#ai-modern-community-details .ai-modern-community-details-title h2::after {
+    content: "";
+    display: inline-block;
+    width: 131px;
+    height: 1px;
+    margin: 30px 0 0;
+    background-color: #c1b283;
+}
+#ai-modern-community-details .ai-modern-community-details-photo {
+    position: relative;
+    float: left;
+    margin-right: 22px;
+    margin-bottom: 40px;
+    width: 45%;
+}
+#ai-modern-community-details .ai-modern-community-details-photo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 67px;
+    bottom: 0;
+    right: calc(100% - 120px);
+    min-width: 310px;
+    width: calc((100vw - (1140px - 120px)) / 2);
+    height: 100%;
+    background: var(--aios-communities-primary-color);
+}
+#ai-modern-community-details .ai-modern-community-details-photo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width: 73px;
+    background: #fff;
+}
+#ai-modern-community-details .ai-modern-community-details-photo canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+#ai-modern-community-details .ai-modern-community-details-photo img {
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ai-modern-community-details-divider {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+#content .aios-community-bttn {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#content .aios-community-bttn a {
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid var(--aios-communities-cta-color);
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: all 0.6s ease !important;
+    color: var(--aios-communities-cta-color);
+}
+#content .aios-community-bttn a:hover{
+    background: var(--aios-communities-primary-color);
+    border-color: var(--aios-communities-primary-color);
+    color: #fff;
+}
+
+#content .aios-communities .entry {
+    line-height: 1.5;
+}
+#content #listings-results{
+    padding-top: 30px;
+}
+#content  #listings-results .listings-sort{
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+    #ai-modern-community-details .ai-modern-community-details-photo {
+        margin-right: -30px;
+    }
+    #ai-modern-community-details .ai-modern-community-details-photo:before {
+        min-width: 200px;
+    }
+    #ai-modern-community-details .ai-modern-community-details-title h2 {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    #ai-modern-community-details .ai-modern-community-details-entry,
+    #ai-modern-community-details .ai-modern-community-details-main {
+        padding: 0;
+    }
+    #ai-modern-community-details .ai-modern-community-details-photo {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+    #ai-modern-community-details .ai-modern-community-details-photo:after,
+    #ai-modern-community-details .ai-modern-community-details-photo:before {
+        display: none;
+    }
+    #ai-modern-community-details .ai-modern-community-details-title {
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    #ai-modern-community-details .ai-modern-community-details-title h2 {
+        word-break: break-all;
+        font-size: 45px;
+    }
+    #content #listings-results{
+        padding-top: 0;
+    }
+
+}

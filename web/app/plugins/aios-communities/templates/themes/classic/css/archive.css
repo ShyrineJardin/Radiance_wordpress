@@ -1,0 +1,320 @@
+#inner-page-wrapper > .container{
+	width: 100% !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.ai-classic-communities {
+	display: block;
+}
+
+.ai-classic-communities-heading {
+	display: block;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.ai-classic-communities-heading-row {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+		.ai-classic-communities-heading-col {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.ai-classic-communities-title {
+			width: 100%;
+		}
+			.ai-classic-communities-title .entry-title {
+				font-family: inherit;
+				font-weight: 400;
+				font-size: 55px;
+				letter-spacing: 0.02em;
+				color: #222222;
+				text-transform: uppercase;
+				text-align: center;
+			}
+				.ai-classic-communities-title .entry-title span {
+					color: var(--aios-communities-primary-color);
+				}
+	.ai-classic-communities-search {
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #6a6a6a;
+		margin-top: 48px;
+	}
+		.ai-classic-communities-search button {
+			background-color: transparent;
+			border: 0;
+			outline: 0;
+			padding: 0;
+			color: #5e5e5e;
+			font-size: 16px;
+		}
+		.ai-classic-communities-search-input {
+			display: flex;
+			align-items: center;
+			position: relative;
+		}
+			.ai-classic-communities-search-input input[type=text] {
+				border: solid 1px #c1c1c1;
+				width: 390px;
+				height: 37px;
+				padding: 0 40px 0 12px;
+				margin-left: 25px;
+				font-size: 16px;
+			}
+			.ai-classic-communities-search-input button {
+				font-size: 0;
+				color: #c1c1c1;
+				position: absolute;
+				top: 0;
+				right: 15px;
+				z-index: 1;
+				width: 40px;
+				height: 38px;
+			}
+				.ai-classic-communities-search-input button::before {
+					font-size: 16px;
+					color: #c1c1c1;
+				}
+		.ai-classic-communities-sortby {
+			display: flex;
+			align-items: center;
+		}
+			.ai-classic-communities-sortby span {
+				display: flex;
+				align-items: center;
+				position: relative;
+			}
+				.ai-classic-communities-sortby span::after {
+					content: '';
+					background-color: var(--aios-communities-primary-color);
+					width: 70px;
+					height: 2px;
+					margin-left: 13px;
+					margin-right: 22px;
+				}
+			.ai-classic-communities-sortby-button-wrap {
+				position: relative;
+			}
+				.ai-classic-communities-sortby-button-wrap select {
+                    border: none;
+                    cursor: pointer;
+                    width: 67px;
+                }
+
+.ai-classic-communities-listings {
+	display: block;
+	position: relative;
+	z-index: 0;
+	margin-top: 50px;
+	overflow: hidden;
+}
+	.ai-classic-communities-listings .ai-classic-communities-listings-row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+		.ai-classic-communities-listings .ai-classic-communities-listing {
+			width: 50%;
+			padding: 15px;
+		}
+			.ai-classic-communities-content {
+				position: relative;
+				color: #222222;
+				transition: color 0.3s linear;
+			}
+				.ai-classic-communities-listing:hover .ai-classic-communities-content {
+					color: #FFFFFF;
+				}
+				.ai-classic-communities-content-img {
+					display: block;
+					width: 100%;
+                    position: relative;
+				}
+
+					.ai-classic-communities-content-img a{
+						display: block;
+						position: relative;
+					}
+						.aios-communities-show-overlay .ai-classic-communities-content-img a::after{
+							display: block;
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							left: 0;
+							top: 0;
+							content: "";
+							background: var(--aios-communities-overlay-color);
+							opacity: var(--aios-communties-overlay-opacity);
+						}
+                    .ai-classic-communities-content-img img{
+                        object-fit: cover;
+                        object-position: center center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100% !important;
+                    }
+					.ai-classic-communities-content-img canvas {
+						display: block;
+						width: 100%;
+						background-color: #A2A2A2;
+						background-size: cover;
+						background-position: center;
+						background-repeat: no-repeat;
+					}
+					
+				.ai-classic-communities-content-grid {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: #f5f4f4;
+					padding: 35px 3.5vw;
+					transition: background-color 0.3s linear;
+				}
+					.ai-classic-communities-listing:hover .ai-classic-communities-content-grid {
+						background-color: var(--aios-communities-primary-color);
+					}
+					.ai-classic-communities-content-grid-price {
+						position: relative;
+						font-size: 42px;
+						text-align: center;
+					}
+						.aios-communities-has-text-shadow .ai-classic-communities-content-grid-price{
+							text-shadow: 1px 1px 1px #000;
+						}
+						.ai-classic-communities-content-grid-price::before {
+							content: '';
+							position: absolute;
+							left: 50%;
+							bottom: -35px;
+							width: 103px;
+							height: 5px;
+							background-color: var(--aios-communities-primary-color);
+							transform: translate(-50%, 0%);
+						}
+							.ai-classic-communities-listing:hover .ai-classic-communities-content-grid-price::before {
+								background-color var(--aios-communities-primary-color);
+							}
+				.ai-classic-communities-content-grid-link {
+					display: block;
+					font-size: 0 !important;
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 10;
+				}
+
+.ai-classic-communities-pagination {
+	display: block;
+	margin-top: 50px;
+}
+	.ai-classic-communities-pagination .page-links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.ai-classic-communities-pagination .page-numbers {
+			font-size: 15px;
+			padding: 0 23px;
+			margin: 0;
+			border-left: 1px solid var(--aios-communities-primary-color);
+			font-weight: 700;
+		}
+			.ai-classic-communities-pagination .page-numbers:hover {
+				color: var(--aios-communities-primary-color);
+			}
+			.ai-classic-communities-pagination .page-numbers.current {
+				border: none;
+			}
+		.ai-classic-communities-pagination .prev.page-numbers,
+		.ai-classic-communities-pagination .next.page-numbers {
+			position: relative;
+			font-family: agentimage!important;
+			speak: none;
+			font-size: 0;
+			font-style: normal;
+			font-weight: 400;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			background-color: var(--aios-communities-primary-color);
+			padding: 10px;
+			color: #FFFFFF;
+			transition: background-color 0.3s linear;
+			width: 56px;
+			height: 53px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+			.ai-classic-communities-pagination .prev.page-numbers::before {
+				content: "\b0001";
+				font-size: 21px;
+				font-weight: 700;
+			}
+			.ai-classic-communities-pagination .next.page-numbers::before {
+				content: "\b0002";
+				font-size: 21px;
+				font-weight: 700;
+
+			}
+			.ai-classic-communities-pagination .prev.page-numbers:hover,
+			.ai-classic-communities-pagination .next.page-numbers:hover {
+				background-color: #222222;
+				color: #FFFFFF;
+			}
+        .prev.page-numbers + .page-numbers {
+            border-left: none;
+        }
+
+.aios-no-communities-found {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.ai-classic-communities-content-grid {
+		padding: 35px 20px;
+	}
+		.ai-classic-communities-content-grid-price {
+			font-size: 32px;
+		}
+}
+
+@media only screen and (max-width: 991px) {
+	.ai-classic-communities-title .entry-title {
+		font-size: 36px;
+	}
+	.ai-classic-communities-search {
+		flex-direction: column;
+	}
+		.ai-classic-communities-search-input input[type=text] {
+			width: auto;
+		}
+		.ai-classic-communities-sortby {
+			margin-top: 15px;
+		}
+	.ai-classic-communities-listings .ai-classic-communities-listing {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.ai-classic-communities-pagination .page-numbers {
+		padding: 0 5px;
+	}
+}

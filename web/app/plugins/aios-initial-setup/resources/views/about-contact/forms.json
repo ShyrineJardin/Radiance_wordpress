@@ -1,0 +1,240 @@
+{
+	"defaults":  {
+		"messages": {
+		  "mail_sent_ok": "Your message was sent successfully. Thanks.",
+		  "mail_sent_ng": "Failed to send your message. Please try later or contact the administrator by another method.",
+		  "validation_error": "Validation errors occurred. Please confirm the fields and submit it again.",
+		  "spam": "Failed to send your message. Please try later or contact the administrator by another method.",
+		  "accept_terms": "Please accept the terms to proceed.",
+		  "invalid_required": "Please fill the required field.",
+		  "captcha_not_match": "Your entered code is incorrect.",
+		  "invalid_number": "Number format seems invalid.",
+		  "number_too_small": "This number is too small.",
+		  "number_too_large": "This number is too large.",
+		  "invalid_email": "Email address seems invalid.",
+		  "invalid_url": "URL seems invalid.",
+		  "invalid_tel": "Telephone number seems invalid.",
+		  "quiz_answer_not_correct": "Your answer is not correct.",
+		  "invalid_date": "Date format seems invalid.",
+		  "date_too_early": "This date is too early.",
+		  "date_too_late": "This date is too late.",
+		  "upload_failed": "Failed to upload file.",
+		  "upload_file_type_invalid": "This file type is not allowed.",
+		  "upload_file_too_large": "This file is too large.",
+		  "upload_failed_php_error": "Failed to upload file. Error occurred."
+		}
+	},
+	"form": {
+		"default": [
+			{
+				"post_type": "wpcf7_contact_form",
+				"title": "Custom Page Form (Auto-generated)",
+				"slug": "custom-page-form-aios",
+				"content": "",
+				"mail": {
+					"subject": "Inquiry from your Agent Image website",
+					"sender": "[first-name] [last-name] <[email-address]>",
+					"recipient": "[_site_admin_email]",
+					"body": "<table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n\t<tr>\n\t\t<td width=\"200\"><strong>Name:</td>\n\t\t<td>[first-name] [last-name]</td>\n\t</tr>\n\t<tr>\n\t\t<td width=\"200\"><strong>Email Address:</td>\n\t\t<td>[email-address]</td>\n\t</tr>\n\t<tr>\n\t\t<td width=\"200\"><strong>Phone:</td>\n\t\t<td>[phone]</td>\n\t</tr>\n\t\t<td width=\"200\"><strong>Message:</td>\n\t\t<td>[message]</td>\n\t</tr>\n</table>",
+					"additional_headers": "Reply-To: [email-address]",
+					"attachments": "",
+					"use_html": true,
+					"exclude_blank": false
+				},
+				"form": "<div class=\"custom-page-form\">\n\t<div class=\"custom-page-row custom-page-name\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-fname\">First Name</label>\n\t\t\t[text* first-name id:custom-page-fname]\n\t\t</div>\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-lname\">Last Name</label>\n\t\t\t[text* last-name id:custom-page-lname]\n\t\t</div>\n\t</div>\n\t<div class=\"custom-page-row custom-page-email-phone\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-fname\">Email</label>\n\t\t\t[email* email-address id:custom-page-email]\n\t\t</div>\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-phone\">Phone</label>\n\t\t\t[text* phone id:custom-page-phone]\n\t\t</div>\n\t</div>\n\t<div class=\"custom-page-row custom-page-message\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"custom-page-message\">Message</label>\n\t\t\t[textarea message id:custom-page-message]\n\t\t\t<button type=\"submit\" aria-label=\"Submit\">\n\t\t\t\t<em style=\"border:0!important;clip:rect(1px,1px,1px,1px)!important;-webkit-clip-path:inset(50%)!important;clip-path:inset(50%)!important;height:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;width:1px!important;white-space:nowrap!important\">Submit</em>\n\t\t\t\t<span class=\"ai-font-paper-airplane-alt\"></span>\n\t\t\t</button>\n\t\t</div>\n\t</div>\n\t<div class=\"custom-page-row custom-page-submit\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t[submit \"Submit\"]\n\t\t</div>\n\t</div>\n</div>"
+			}
+		],
+		"hiddenlabel": [
+			{
+				"post_type": "wpcf7_contact_form",
+				"title": "Custom Page Form Hide Label (Auto-generated)",
+				"slug": "custom-page-form-aios",
+				"content": "",
+				"mail": {
+					"subject": "Inquiry from your Agent Image website",
+					"sender": "[first-name] [last-name] <[email-address]>",
+					"recipient": "[_site_admin_email]",
+					"body": "<table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n\t<tr>\n\t\t<td width=\"200\"><strong>Name:</td>\n\t\t<td>[first-name] [last-name]</td>\n\t</tr>\n\t<tr>\n\t\t<td width=\"200\"><strong>Email Address:</td>\n\t\t<td>[email-address]</td>\n\t</tr>\n\t<tr>\n\t\t<td width=\"200\"><strong>Phone:</td>\n\t\t<td>[phone]</td>\n\t</tr>\n\t\t<td width=\"200\"><strong>Message:</td>\n\t\t<td>[message]</td>\n\t</tr>\n</table>",
+					"additional_headers": "Reply-To: [email-address]",
+					"attachments": "",
+					"use_html": true,
+					"exclude_blank": false
+				},
+				"form": "<div class=\"custom-page-form custom-page-hidden-label\">\n\t<div class=\"custom-page-row custom-page-name\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-fname\">First Name</label>\n\t\t\t[text* first-name id:custom-page-fname placeholder \"First Name\"]\n\t\t</div>\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-lname\">Last Name</label>\n\t\t\t[text* last-name id:custom-page-lname placeholder \"Last Name\"]\n\t\t</div>\n\t</div>\n\t<div class=\"custom-page-row custom-page-email-phone\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-fname\">Email</label>\n\t\t\t[email* email-address id:custom-page-email placeholder \"Email\"]\n\t\t</div>\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-phone\">Phone</label>\n\t\t\t[text* phone id:custom-page-phone placeholder \"Phone\"]\n\t\t</div>\n\t</div>\n\t<div class=\"custom-page-row custom-page-message\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t<label class=\"custom-page-label\" for=\"custom-page-message\">Message</label>\n\t\t\t[textarea message id:custom-page-message placeholder \"Message Here...\"]\n\t\t\t<button type=\"submit\" aria-label=\"Submit\">\n\t\t\t\t<em style=\"border:0!important;clip:rect(1px,1px,1px,1px)!important;-webkit-clip-path:inset(50%)!important;clip-path:inset(50%)!important;height:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;width:1px!important;white-space:nowrap!important\">Submit</em>\n\t\t\t\t<span class=\"ai-font-paper-airplane-alt\"></span>\n\t\t\t</button>\n\t\t</div>\n\t</div>\n\t<div class=\"custom-page-row custom-page-submit\">\n\t\t<div class=\"custom-page-col\">\n\t\t\t[submit \"Submit\"]\n\t\t</div>\n\t</div>\n</div>"
+			}
+		],
+		"withnewsletter": [
+			{
+				"post_type": "wpcf7_contact_form",
+				"title": "Custom Page Form with Newsletter (Auto-generated)",
+				"slug": "custom-page-form-aios",
+				"content": "",
+				"mail": {
+					"subject": "Inquiry from your Agent Image website",
+					"sender": "[first-name] [last-name] <[email-address]>",
+					"recipient": "[_site_admin_email]",
+					"body": "<table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n\t<tr>\n\t\t<td width=\"200\"><strong>Name:</td>\n\t\t<td>[first-name] [last-name]</td>\n\t</tr>\n\t<tr>\n\t\t<td width=\"200\"><strong>Email Address:</td>\n\t\t<td>[email-address]</td>\n\t</tr>\n\t<tr>\n\t\t<td width=\"200\"><strong>Phone:</td>\n\t\t<td>[phone]</td>\n\t</tr>\n\t\t<td width=\"200\"><strong>Message:</td>\n\t\t<td>[message]</td>\n\t</tr>\n</table>",
+					"additional_headers": "Reply-To: [email-address]",
+					"attachments": "",
+					"use_html": true,
+					"exclude_blank": false
+				},
+				"form": "<div class=\"custom-page-form custom-page-hidden-label\">\r\n\t<div class=\"custom-page-row custom-page-name\">\r\n\t\t<div class=\"custom-page-col\">\r\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-fname\">First Name<\/label>\r\n\t\t\t[text* first-name id:custom-page-fname placeholder \"First Name\"]\r\n\t\t<\/div>\r\n\t\t<div class=\"custom-page-col\">\r\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-lname\">Last Name<\/label>\r\n\t\t\t[text* last-name id:custom-page-lname placeholder \"Last Name\"]\r\n\t\t<\/div>\r\n\t<\/div>\r\n\t<div class=\"custom-page-row custom-page-email-phone\">\r\n\t\t<div class=\"custom-page-col\">\r\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-fname\">Email<\/label>\r\n\t\t\t[email* email-address id:custom-page-email placeholder \"Email\"]\r\n\t\t<\/div>\r\n\t\t<div class=\"custom-page-col\">\r\n\t\t\t<label class=\"custom-page-label\" for=\"aios-about-phone\">Phone<\/label>\r\n\t\t\t[text* phone id:custom-page-phone placeholder \"Phone Number\"]\r\n\t\t<\/div>\r\n\t<\/div>\r\n\t<div class=\"custom-page-row custom-page-message\">\r\n\t\t<div class=\"custom-page-col\">\r\n\t\t\t<label class=\"custom-page-label\" for=\"custom-page-message\">Message<\/label>\r\n\t\t\t[textarea message id:custom-page-message placeholder \"Message\"]\r\n\t\t<\/div>\r\n\t<\/div>\r\n\r\n\t<div class=\"custom-page-row custom-page-stayintouch\">\r\n\t\t<div class=\"custom-page-col\">\r\n\t\t\t[checkbox stayintouch id:globlFormStyInTouch use_label_element \"Stay in touch with ai_client_name exclusive newsletter.\"]\r\n\t\t<\/div>\r\n\t<\/div>\r\n\t\r\n\t<div class=\"custom-page-row custom-page-submit\">\r\n\t\t<div class=\"custom-page-col\">\r\n\t\t\t[submit \"Submit\"]\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>"
+			}
+		]
+	},
+	"amanteii": {
+		"has_form": "hiddenlabel",
+		"heading": {
+			"about": "",
+			"contact": ""
+		},
+		"about": {
+			"theme": "agent-pro-amante-ii",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/ap-amante-ii.jpg",
+			"title": "Chris Morgan",
+			"content": "Since Year, Chris Morgan has been representing buyers and sellers all throughout the Auburn area. We specialize particularly in type of real estate, type of real estate and type of real estate in AAuburn. Established by top-producing Agent, from the very beginning, we have been raising the bar for what it means to provide first-rate service to our clients.\n\nIn today’s real estate market, selling and buying a home requires advanced knowledge of online as well as traditional marketing platforms. Just having a real estate license and listing a home on the MLS is not enough – you want an agent who has their ear to the ground when it comes to market trends, a deep understanding of the communities they serve, and the ability to think outside the box. As part of the Chris Morgan team, our agents’ skills go far beyond closing deals.\n\nIn today’s real estate market, selling and buying a home requires advanced knowledge of online as well as traditional marketing platforms. Just having a real estate license and listing a home on the MLS is not enough – you want an agent who has their ear to the ground when it comes to market trends, a deep understanding of the communities they serve, and the ability to think outside the box. As part of the Chris Morgan team, our agents’ skills go far beyond closing deals.\n\nOver the years, our team has earned a number of distinguished professional designations We showcase our sellers’ properties on our agent websites as well as top real estate sites such as Website, Website and Website in a way that gets attention. Our listings appear on leading local and national publications. Our goal is to make sure that their homes are viewed in the best light and are seen by the widest audience possible. Our campaigns work. From Year to Year, Chris Morgan closed $$$ in sales and our total sales over the years has reached $$$. Buying a home in Auburn? Whether you’re a first-time homebuyer or this is your fifth home, you will have a seasoned pro to guide you throughout every step of the process. Our clients get the best personalized service, qualified advice, and professional assistance in Auburn. Knowing that we are on their side gives Chris Morgan’s clients a stress-free real estate experience. In today’s real estate market, experience can mean all the difference in a successful real estate transaction. From buying your first home to expanding your real estate investment portfolio, our team at Chris Morgan looks forward to helping you realize all your real estate goals, big and small.\n\nhome, you will have a seasoned pro to guide you throughout every step of the process. Our clients get the best personalized service, qualified advice, and professional assistance in Auburn. Knowing that we are on their side gives Chris Morgan’s clients a stress-free real estate experience. In today’s real estate market, experience can mean all the difference in a successful real estate transaction. From buying your first home to expanding your real estate investment portfolio, our team at Chris Morgan looks forward to helping you realize all your real estate goals, big and small. Our team is well respected within the community, and many of our agents are actively involved in everything from local charitable institutions to sitting on the boards of various community organizations. If you live in Auburn or are planning to relocate to Auburn, there is no better brokerage in the area to help you find the home of your dreams or to help you sell your home for the best possible price. Speak with one of our agents today to get started! The search is over. His website is designed to be your one-stop shop for real estate in Auburn. This is the moment that you should enjoy the most; looking at the available properties in Auburn; imagining yourself living in the home that you have always dreamed about. You don’t want just another database that gives you rehashed property descriptions. You want to walk around the neighborhood from the comfort of your own home. You want to get a clear picture about life in Auburn. That is exactly what you get here. This website has been built with you in mind. From the highest quality property images to the most informative guides and blogs, he is here to make your home buying or selling experience smooth and stress-free."
+		},
+		"contact": {
+			"theme": "agent-pro-amante-ii",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/ap-amante-ii.jpg",
+			"title": "<strong>Questions?</strong>Contact Me",
+			"subtitle": "Fill out the form below and I will get to you.",
+			"iframe_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8804234261693!2d-118.39997071542031!3d33.92804381358489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b135c3f2d0a9%3A0xd7c75e8e8682dd56!2s1700%20E%20Walnut%20Ave%20%23400%2C%20El%20Segundo%2C%20CA%2090245%2C%20USA!5e0!3m2!1sen!2sph!4v1579006477044!5m2!1sen!2sph"
+		}
+	},
+	"element": {
+		"has_form": "hiddenlabel",
+		"heading": {
+			"about": "",
+			"contact": "<strong>Get In Touch</strong>"
+		},
+		"about": {
+			"theme": "agent-pro-element",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/element-about.jpg",
+			"add_meet": "1",
+			"title": "Georgina Smith <br />Real Estate",
+			"content": "It is with great pleasure that Georgina Smith welcomes you to New Jersey, and to her website. With years of experience in the market, she knows how crucial it is for you to find relevant, up-to- date information. The search is over. Her website is designed to be your one-stop shop for real estate in New Jersey.\n\nThis is the moment that you should enjoy the most; looking at the available properties in sample city; imagining yourself living in the home that you have always dreamed about. You don’t want just another database that gives you rehashed property descriptions. You want to walk around the neighborhood from the comfort of your own home. You want to get a clear picture about life in New Jersey.\n\nThat is exactly what you get here. This website has been built with you in mind. From the highest quality property images to the most informative guides and blogs, she is here to make your home buying or selling experience smooth and stress-free. We specialize particularly in type of real estate, type of real estate and type of real estate in Area 1, Area 2 and Area 3. Established by top-producing Agent, from the very beginning, we have been raising the bar for what it means to provide first-rate service to our clients.\n\nIn today’s real estate market, selling and buying a home requires advanced knowledge of online as well as traditional marketing platforms. Just having a real estate license and listing a home on the MLS is not enough – you want an agent who has their ear to the ground when it comes to market trends, a deep understanding of the communities they serve, and the ability to think outside the box. As part of the Georgina Smith team, our agents’ skills go far beyond closing deals. Our agents are well known for their all-out approach to the job. Whether dealing with a buyer or a seller, each member of our team is masterful at creating aggressive, effective online marketing campaigns that get maximum exposure. With our vast network and access to real-time market information, our agents are able to give valuable insights and guidance in all aspects of the buying and selling process.\n\nWe showcase our sellers’ properties on our agent websites as well as top real estate sites such as Website, Website and Website in a way that gets attention. Our listings appear on leading local and national publications. Our goal is to make sure that their homes are viewed in the best light and are seen by the widest audience possible. Our campaigns work. From Year to Year, ABC Brokerage closed $$$ in sales and our total sales over the years has reached $$$.\n\nBuying a home in New Jersey? Whether you’re a first-time homebuyer or this is your fifth home, you will have a seasoned pro to guide you throughout every step of the process. Our clients get the best personalized service, qualified advice, and professional assistance in New Jersey. Knowing that we are on their side gives Georgina Smith’s clients a stress-free real estate experience.\n\nIn today’s real estate market, experience can mean all the difference in a successful real estate transaction. From buying your first home to expanding your real estate investment portfolio, our team at Georgina Smith looks forward to helping you realize all your real estate goals, big and small.\n\nIf you live in New Jersey or are planning to relocate to New Jersey, there is no better brokerage in the area to help you find the home of your dreams or to help you sell your home for the best possible price. Speak with one of our agents today to get started!"
+		},
+		"contact": {
+			"theme": "agent-pro-element",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/element-contact.jpg",
+			"title": "Georgina Smith",
+			"iframe_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8804234261693!2d-118.39997071542031!3d33.92804381358489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b135c3f2d0a9%3A0xd7c75e8e8682dd56!2s1700%20E%20Walnut%20Ave%20%23400%2C%20El%20Segundo%2C%20CA%2090245%2C%20USA!5e0!3m2!1sen!2sph!4v1579006477044!5m2!1sen!2sph"
+		}
+	},
+	"iconic": {
+		"has_form": "hiddenlabel",
+		"heading": {
+			"about": "",
+			"contact": "Required fields are marked  *"
+		},
+		"about": {
+			"theme": "agent-pro-iconic",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/iconic-about.jpg",
+			"title": "About Patricia Faraday",
+			"content": "Since 2020, Patricia Faraday has been representing buyers and sellers all throughout the Auburn area. We specialize particularly in type of real estate, type of real estate and type of real estate in Auburn. Established by top-producing Agent, from the very beginning, we have been raising the bar for what it means to provide first-rate service to our clients.\n\nIn today’s real estate market, selling and buying a home requires advanced knowledge of online as well as traditional marketing platforms. Just having a real estate license and listing a home on the MLS is not enough – you want an agent who has their ear to the ground when it comes to market trends, a deep understanding of the communities they serve, and the ability to think outside the box. As part of the Patricia Faraday team, our agents’ skills go far beyond closing deals.\n\nIn today’s real estate market, selling and buying a home requires advanced knowledge of online as well as traditional marketing platforms. Just having a real estate license and listing a home on the MLS is not enough – you want an agent who has their ear to the ground when it comes to market trends, a deep understanding of the communities they serve, and the ability to think outside the box. As part of the Patricia Faraday team, our agents’ skills go far beyond closing deals.\n\nWe showcase our sellers’ properties on our agent websites as well as top real estate sites such as Website, Website and Website in a way that gets attention. Our listings appear on leading local and national publications. Our goal is to make sure that their homes are viewed in the best light and are seen by the widest audience possible. Our campaigns work. From Year to Year, Patricia Faraday closed $$$ in sales and our total sales over the years has reached $$$. Buying a home in Auburn? Whether you’re a first- time homebuyer or this is your fifth home, you will have a seasoned pro to guide you throughout every step of the process. Our clients get the best personalized service, qualified advice, and professional assistance in Auburn. Knowing that we are on their side gives Patricia Faraday’s clients a stress-free real estate experience. In today’s real estate market, experience can mean all the difference in a successful real estate transaction. From buying your first home to expanding your real estate investment portfolio, our team at Patricia Faraday looks forward to helping you realize all your real estate goals, big and small. Our team is well respected within the community, and many of our agents are actively involved in everything from local charitable institutions to sitting on the boards of various community organizations.\n\nIf you live in Auburn or are planning to relocate to Auburn, there is no better brokerage in the area to help you find the home of your dreams or to help you sell your home for the best possible price. Speak with one of our agents today to get started! This is the moment that you should enjoy the most; looking at the available properties in Auburn; imagining yourself living in the home that you have always dreamed about. You don’t want just another database that gives you rehashed property descriptions. You want to walk around the neighborhood from the comfort of your own home. You want to get a clear picture about life in Auburn.\n\nThat is exactly what you get here. This website has been built with you in mind. From the highest quality property images to the most informative guides and blogs, she is here to make your home buying or selling experience smooth and stress-free."
+		},
+		"contact": {
+			"theme": "agent-pro-iconic",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/iconic-about.jpg",
+			"title": "<span>Client Name</span> Homes",
+			"address-display": "",
+			"cta_1_url": "/properties/",
+			"cta_1_title": "View Properties",
+			"cta_2_url": "/what-is-my-home-worth/",
+			"cta_2_title": "What’s My Home Worth",
+			"cta_3_url": "/help-me-relocate/",
+			"cta_3_title": "Help Me Relocate",
+			"iframe_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8804234261693!2d-118.39997071542031!3d33.92804381358489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b135c3f2d0a9%3A0xd7c75e8e8682dd56!2s1700%20E%20Walnut%20Ave%20%23400%2C%20El%20Segundo%2C%20CA%2090245%2C%20USA!5e0!3m2!1sen!2sph!4v1579006477044!5m2!1sen!2sph"
+		}
+	},
+	"legacy": {
+		"has_form": "hiddenlabel",
+		"heading": {
+			"about": "<h2>Send Me A Message <span>Got any questions? Get in touch</span></h2>",
+			"contact": "<h2>Send Me A Message <span>Got any questions? Get in touch</span></h2>"
+		},
+		"about": {
+			"theme": "agent-pro-legacy",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/legacy-about.jpg",
+			"title": "Eric Davis",
+			"content": "It is with great pleasure that Davis Signature Homes welcomes you to Los Angeles, and to his website. With years of experience in the market, he knows how crucial it is for you to find relevant, up-to- date information. The search is over. His website is designed to be your one-stop shop for real estate in Los Angeles.\n\nThis is the moment that you should enjoy the most; looking at the available properties in Los Angeles; imagining yourself living in the home that you have always dreamed about. You don’t want just another database that gives you rehashed property descriptions. You want to walk around the neighborhood from the comfort of your own home. You want to get a clear picture about life in Los Angeles.\n\nThat is exactly what you get here. This website has been built with you in mind. From the highest quality property images to the most informative guides and blogs, she is here to make your home buying or selling experience smooth and stress-free.\n\nWe specialize particularly in type of real estate, type of real estate and type of real estate in Los Angels. Established by top-producing Agent, from the very beginning, we have been raising the bar for what it means to provide first-rate service to our clients. In today’s real estate market, selling and buying a home requires advanced knowledge of online as well as traditional marketing platforms. Just having a real estate license and listing a home on the MLS is not enough – you want an agent who has their ear to the ground when it comes to market trends, a deep understanding of the communities they serve, and the ability to think outside the box. As part of the Davis Signature Homes team, our agents’ skills go far beyond closing deals.\n\nOur agents are well known for their all-out approach to the job. Whether dealing with a buyer or a seller, each member of our team is masterful at creating aggressive, effective online marketing campaigns that get maximum exposure. With our vast network and access to real-time market information, our agents are able to give valuable insights and guidance in all aspects of the buying and selling process. Over the years, our team has earned a number of distinguished professional designations. We showcase our sellers’ properties on our agent websites as well as top real estate sites such as Website, Website and Website in a way that gets attention. Our listings appear on leading local and national publications. Our goal is to make sure that their homes are viewed in the best light and are seen by the widest audience possible. Whether you’re a first-time homebuyer or this is your fifth home, you will have a seasoned pro to guide you throughout every step of the process. n today’s real estate market, experience can mean all the difference in a successful real estate transaction. From buying your first home to expanding your real estate investment portfolio, our team at Davis Signature Homes looks forward to helping you realize all your real estate goals, big and small.\n\nOur team is well respected within the community, and many of our agents are actively involved in everything from local charitable institutions to sitting on the boards of various community organizations.\n\nIf you live in Los Angeles or are planning to relocate to Los Angeles, there is no better brokerage in the area to help you find the home of your dreams or to help you sell your home for the best possible price. Speak with one of our agents today to get started!"
+		},
+		"contact": {
+			"theme": "agent-pro-legacy",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/legacy-about.jpg",
+			"title": "Eric Davis",
+			"iframe_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8804234261693!2d-118.39997071542031!3d33.92804381358489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b135c3f2d0a9%3A0xd7c75e8e8682dd56!2s1700%20E%20Walnut%20Ave%20%23400%2C%20El%20Segundo%2C%20CA%2090245%2C%20USA!5e0!3m2!1sen!2sph!4v1579006477044!5m2!1sen!2sph"
+		}
+	},
+	"equinox": {
+		"has_form": "withnewsletter",
+		"heading": {
+			"about": "",
+			"contact": ""
+		},
+		"about": {
+			"theme": "agent-pro-equinox",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/equinox-agent-photo.jpg",
+			"about_overlay_photo": "https://resources.agentimage.com/agentpro/equinox-about-overlay.jpg",
+			"sticky_distance": 160,
+			"title": "Emily Denver",
+			"subtitle":"Real Estate ",
+			"content": "\tEmily Denver not only represents homebuyers in Los Angeles, but she also lives there. That gives her a decided advantage over other agents who live in other parts of Los Angeles. Her knowledge and experience when it comes to buying and selling real estate in Los Angeles are simply unmatched.\r\n\r\n\t\t\t\t\t\tHer thorough familiarity and knowledge of Los Angeles\u2019 communities, neighborhoods, and local attractions help her match her clients with the right home for them. Emily Denver is able to give her clients detailed information about the pluses and minuses of each area. Plus, as a certified relocation expert, she stays on top of the latest changes and trends in both the local and national real estate markets.\r\n\r\n\t\t\t\t\t\tA graduate of General University and licensed by the Los Angeles Licensing Board, her educational background, combined with her many years of experience, is what makes her a top agent at Compass Real Estate. Her professionalism, winning personality, and personalized service are just what buyers need to find the homes of their dreams. In the course of five years, she has earned her reputation as a driven agent who gives her clients a smooth and stress-free home buying and selling experience. She understands that every client is different and will work tirelessly to help them achieve their real estate goals. There is no one-size-fits-all method for representing her clients in their real estate transactions.\r\n\r\n\t\t\t\t\t\t<h4>Track Record of Success<\/h4>\r\n\r\n\t\t\t\t\t\tEmily Denver has a long track record of success as an agent with J.J. South Real Estate. The quality of her service is something that all of her clients are happy to attest to. Knowing the real estate business the way that she does has given her a stellar list of satisfied clients who list among her many great qualities her expertise.\r\n\t\t\t\t\t\tCompared to other area agents, no one comes close. Emily Denver works hard to get her clients the best deal whether they are buying or selling a home. Most importantly, she is there every step of the way to answer her clients\u2019 questions promptly and straightforwardly.\r\n\r\n\t\t\t\t\t\tAccording to Emily Denver, helping her clients understand the whole process is part of the job. Her goal is to serve as a trusted advisor and guide, educating her clients so that they are a part of the process. Her invaluable input saves home buyers thousands and gets sellers the best-asking price possible. That is exactly the type of agent buyers and sellers want and need!\r\n\r\n\t\t\t\t\t\t<h4>Working With Emily Denver<\/h4>\r\n\r\n\t\t\t\t\t\tThere is a lot of peace of mind that comes with working with Emily Denver. She puts the effort and time into building strong relationships with her clients, which is crucial to creating a positive real estate experience. When there are tough choices to be made and important details to iron out, her clients trust her to help them make the right decisions.\r\n\r\n\t\t\t\t\t\tEmily Denver exemplifies the quality agents that represent J.J. South Real Estate. She doesn\u2019t push her clients into buying more houses than they can afford, and she doesn\u2019t hold back any information about the neighborhoods in Los Angeles. She is always on her clients\u2019 side, like a loyal friend. With all that he offers, probably the best thing about working with Emily Denver is the hassle-free experience she provides. She does the heavy lifting: crunching the numbers, searching through thousands of listings, and negotiating with sellers or buyers agents so that her clients aren\u2019t stressed out.\r\n\r\n\t\t\t\t\t\t<h4>Talk to Emily Today!<\/h4>\r\n\r\n\t\t\t\t\t\tDoes Emily sound too good to be true? Believe it or not, she is just that good and is ready right now to start the process of buying or selling a home with you. The best way to find out just how good she is is to talk to Emily today! We are positive that you will agree that Emily Denver is the best agent in Los Angeles!\r\n\r\n\t\t\t\t\t\tTake a look around Emily\u2019s site to see the type of properties Emily represents and all of the services that she provides. If you are ready to work with an agent who puts you and your needs first, she is just one phone call away. Fill out the contact form or simply pick up the phone to talk to Emily today!"
+		},
+		"contact": {
+			"theme": "agent-pro-equinox",
+			"agent_team_photo": "https://resources.agentimage.com/agentpro/legacy-about.jpg",
+			"title": "Eric Davis",
+			"iframe_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8804234261693!2d-118.39997071542031!3d33.92804381358489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b135c3f2d0a9%3A0xd7c75e8e8682dd56!2s1700%20E%20Walnut%20Ave%20%23400%2C%20El%20Segundo%2C%20CA%2090245%2C%20USA!5e0!3m2!1sen!2sph!4v1579006477044!5m2!1sen!2sph"
+		}
+	},
+	"elevate": {
+		"has_form": "withnewsletter",
+		"heading": {
+			"about": "",
+			"contact": ""
+		},
+		"contact": {
+			"theme": "agent-pro-elevate",
+			"agent_team_photo": "",
+			"title": "",
+			"iframe_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8804234261693!2d-118.39997071542031!3d33.92804381358489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b135c3f2d0a9%3A0xd7c75e8e8682dd56!2s1700%20E%20Walnut%20Ave%20%23400%2C%20El%20Segundo%2C%20CA%2090245%2C%20USA!5e0!3m2!1sen!2sph!4v1579006477044!5m2!1sen!2sph"
+		}
+	},
+	"ascend": {
+		"has_form": "withnewsletter",
+		"heading": {
+			"about": "",
+			"contact": ""
+		},
+		"contact": {
+			"theme": "agent-pro-elevate",
+			"agent_team_photo": "",
+			"title": "",
+			"iframe_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8804234261693!2d-118.39997071542031!3d33.92804381358489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b135c3f2d0a9%3A0xd7c75e8e8682dd56!2s1700%20E%20Walnut%20Ave%20%23400%2C%20El%20Segundo%2C%20CA%2090245%2C%20USA!5e0!3m2!1sen!2sph!4v1579006477044!5m2!1sen!2sph"
+		}
+	},
+	"classic": {
+		"has_form": "default",
+		"heading": {
+			"about": "<h2>Send me a message</h2><p>Got any questions? Get in touch</p>",
+			"contact": ""
+		}
+	},
+	"minimalist": {
+		"has_form": "default",
+		"heading": {
+			"about": "<h2>Send me a message</h2><p>Got any questions? Get in touch</p>",
+			"contact": "<h2>SEND ME A MESSAGE</h2><p>Got any questions? Get in touch</p>"
+		}
+	},
+	"modern": {
+		"has_form": "default",
+		"heading": {
+			"about": "<h2>Send me a <strong>message</strong></h2><p>Got any questions? Get in touch</p>",
+			"contact": "<h2 class=\"ai-modern-contact-form-title\"><strong>Send Me A Message</strong><span>Got any questions? Get in Touch</span></h2>"
+		}
+	}
+}

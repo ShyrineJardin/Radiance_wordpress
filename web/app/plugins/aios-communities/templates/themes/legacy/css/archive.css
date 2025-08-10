@@ -1,0 +1,392 @@
+.no-communities-found {
+    font-size: 16px;
+}
+.aios-communities-legacy {
+    position: relative;
+}
+.aios-communities-legacy .term-description.entry {
+    margin-bottom: 1.2em;
+}
+.aios-communities-legacy .aioscomu-list {
+    padding: 4px;
+    position: relative;
+    width: 24.5%;
+    height: 183px;
+}
+
+.aios-communities-legacy .aioscomu-list:first-child {
+    width: 49%;
+    height: 373px;
+}
+
+.aios-communities-legacy .aioscomu-list:nth-child(2) {
+    width: 26.5%;
+    height: 556px;
+}
+
+.aios-communities-legacy .aioscomu-list:nth-child(4),
+.aios-communities-legacy .aioscomu-list:nth-child(5){
+    margin-top: -183px;
+}
+.aios-communities-legacy .aioscomu-list:nth-child(6){
+    margin-left: 26.5%;
+    margin-top: -373px;
+}
+
+.aios-communities-legacy .aioscomu-list a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.aios-communities-legacy .aioscomu-list:nth-child(7){
+    margin-left: auto;
+    margin-top: -189px;
+}
+
+.aios-communities-legacy .aioscomu-photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #696969;
+    width: 100%;
+    height: 100%;
+}
+.aios-communities-legacy .aioscomu-photo canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--aios-communities-primary-color);
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.aios-communities-legacy .aioscomu-photo img {
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.aios-communities-legacy .aioscomu-photo::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--aios-communities-overlay-color);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: var(--aios-communties-overlay-opacity);
+}
+.aios-communities-legacy .aioscomu-list:hover a .aioscomu-photo::after {
+    opacity: 0;
+}
+.aios-communities-legacy .aioscomu-list.aios-communities-show-overlay a .aioscomu-photo::after {
+    opacity: var(--aios-communties-overlay-opacity);
+}
+.aios-communities-legacy .aioscomu-photo::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background: var(--aios-communities-primary-color);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.aios-communities-legacy .aioscomu-list:hover a .aioscomu-photo::before {
+    opacity: 1;
+}
+.aios-communities-legacy .aioscomu-label {
+    font-weight: 600;
+    color: #fff;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 20px;
+}
+.aios-communities-legacy .aioscomu-label span {
+    font-weight: 600;
+}
+.aios-communities-legacy .aioscomu-list.aios-communities-has-text-shadow .aioscomu-label {
+    text-shadow: 1px 2px 2px #000;
+}
+.aios-communities-legacy .aioscomu-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 4;
+}
+.aios-communities-legacy .aioscomu-holder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -110px;
+    font-size: 0;
+    flex-flow: row wrap;
+}
+.aios-communities-legacy .aioscomu-holder {
+    margin: 0 auto !important;
+}
+.aios-communities-legacy .aioscomu-col1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 49%;
+}
+.aios-communities-legacy .aioscomu-col1 .aioscomu-list {
+    width: 50%;
+}
+.aios-communities-legacy .aioscomu-col1 .aioscomu-list:first-child {
+    width: 100%;
+}
+.aios-communities-legacy .aioscomu-col2 {
+    width: 26.5%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.aios-communities-legacy .aioscomu-col2 .aioscomu-list a,
+.aios-communities-legacy .aioscomu-col2 .aioscomu-photo,
+.aios-communities-legacy .aioscomu-col2 .aioscomu-photo canvas {
+    height: 100%;
+}
+.aios-communities-legacy .aioscomu-col3 {
+    width: 24.5%;
+}
+.aios-communities-legacy .aioscomu-list.aioscomu-title {
+    position: relative;
+}
+.aios-communities-legacy .aioscomu-title {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: red;
+    line-height: 1.15;
+    position: relative;
+    text-align: center;
+}
+.aios-communities-legacy .aioscomu-title span {
+    display: block;
+    font-weight: 600;
+}
+.aios-communities-legacy .aioscomu-title-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+}
+.aios-communities-legacy .aioscomu-title-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid 1px #ded1c1;
+    height: 100%;
+}
+.aios-communities-legacy .aioscomu-col3 .aioscomu-list {
+    height: calc(100% / 3);
+}
+.ai-communities-pagination {
+    position: relative;
+    display: block;
+    margin: 50px 0;
+    width: 100%;
+}
+.ai-communities-pagination ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+}
+.ai-communities-pagination ul li {
+    position: relative;
+    display: block;
+    margin: 15px 0;
+    padding: 0 30px;
+}
+.ai-communities-pagination .aios-communitiesNext,
+.ai-communities-pagination .aios-communitiesPrev {
+    padding: 0;
+}
+.ai-communities-pagination ul li + li {
+    border-left: 1px solid #898989;
+}
+.ai-communities-pagination ul li.aios-communitiesNext,
+.ai-communities-pagination ul li.aios-communitiesPrev + li {
+    border: none;
+}
+.ai-communities-pagination ul li a,
+.ai-communities-pagination ul li span {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    color: #898989;
+    transition: all 0.4s ease-in-out;
+}
+.ai-communities-pagination ul li a.active,
+.ai-communities-pagination ul li a:hover {
+    color: var(--aios-communities-primary-color, #bfb183);
+}
+.ai-communities-pagination ul li.aios-communitiesNext a:first-child + a,
+.ai-communities-pagination ul li.aios-communitiesPrev a:first-child + a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    width: 46px;
+    height: 44px;
+    color: #898989;
+}
+.ai-communities-pagination ul li.aios-communitiesNext a:first-child,
+.ai-communities-pagination ul li.aios-communitiesPrev a:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: block;
+}
+.ai-communities-pagination ul li.aios-communitiesNext a.active,
+.ai-communities-pagination ul li.aios-communitiesNext a:hover,
+.ai-communities-pagination ul li.aios-communitiesPrev a.active,
+.ai-communities-pagination ul li.aios-communitiesPrev a:hover {
+    color: var(--aios-communities-primary-color, #bfb183);
+}
+.ai-communities-pagination ul li.aios-communitiesNext a i,
+.ai-communities-pagination ul li.aios-communitiesPrev a i {
+    font-style: inherit;
+    font-weight: 700;
+    color: inherit;
+}
+@media only screen and (max-width: 1199px) {
+    .aios-communities-legacy .aioscomu-label {
+        font-size: 20px;
+    }
+    .aios-communities-legacy .aioscomu-title {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 991px) {
+
+    .aios-communities-legacy .aioscomu-list{
+        width: 100% !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+    .aios-communities-legacy .aioscomu-holder {
+        margin: 0 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .aios-communities-legacy .aioscomu-col1,
+    .aios-communities-legacy .aioscomu-col2 {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .aios-communities-legacy .aioscomu-col1 .aioscomu-list,
+    .aios-communities-legacy .aioscomu-col3,
+    .aios-communities-legacy .aioscomu-col3 .aioscomu-list {
+        width: 100%;
+    }
+    .aios-communities-legacy .aioscomu-col3 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .aios-communities-legacy .aioscomu-col3 .aioscomu-list {
+        height: auto;
+    }
+    .aios-communities-legacy .aioscomu-list.aioscomu-title-holder .aioscomu-photo {
+        display: none;
+    }
+    .aios-communities-legacy .aioscomu-title-inner {
+        position: relative;
+    }
+    .aios-communities-legacy .aioscomu-title-content {
+        padding: 30px 15px;
+    }
+    .aios-communities-legacy .aioscomu-photo canvas {
+        height: 310px !important;
+    }
+    .aios-communities-legacy .aioscomu-label {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 480px) {
+ 
+}

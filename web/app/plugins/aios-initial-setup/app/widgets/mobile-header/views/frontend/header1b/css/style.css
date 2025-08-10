@@ -1,0 +1,42 @@
+/* Header 1B */
+
+	.amh-header-buttons.amh-1b .amh-header-right-btn {
+		padding: 0;
+	}
+	
+	.amh-header-buttons.amh-1b .amh-center {
+		padding: 5px 0;
+		font-size:0;
+	}
+
+	.amh-header-buttons.amh-1b .amh-center:before {
+		display: inline-block;
+		vertical-align: middle;
+		width: 0;
+		height: 100%;
+		content: '';
+	}
+
+	.amh-header-buttons.amh-1b .amh-logo {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+	}
+	
+		.amh-header-buttons.amh-1b .amh-logo a {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 20px;
+		}
+	
+		.amh-header-buttons.amh-1b .amh-logo img {
+			width: auto;
+			height: 34px;
+		} 
+
+	.amh-header-buttons.amh-1b .amh-header-right-btn a.amh-phone {
+		padding: 17px 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}

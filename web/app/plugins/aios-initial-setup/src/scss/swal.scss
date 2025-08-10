@@ -1,0 +1,43 @@
+$main-color			: #009bbb;
+$secondary-color	: #fb7a03;
+$disabled-color		: #aaa;
+
+@mixin border-round() {
+	-webkit-border-radius: 25px !important;
+	-moz-border-radius: 25px !important;
+	border-radius: 25px !important;
+}
+
+@mixin border-circle() {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.swal2-popup {
+	.swal2-styled{
+		background: $secondary-color !important;
+		border-color: $secondary-color !important;
+		@include border-round();
+		-webkit-appearance: none;
+		border: 0;
+		width: auto;
+		min-width: 200px;
+		height: 39px;
+		padding: 0 15px !important;
+		font-weight: 700 !important;
+		font-size: 15px !important;
+		color: #fff !important;
+		text-align: center !important;
+		text-decoration: none !important;
+		line-height: 39px !important;
+		outline: 0;
+		cursor: pointer;
+		&.swal2-cancel{
+			background-color: $disabled-color !important;
+		}
+	}
+	.swal2-styled:focus{
+		box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+	}
+}

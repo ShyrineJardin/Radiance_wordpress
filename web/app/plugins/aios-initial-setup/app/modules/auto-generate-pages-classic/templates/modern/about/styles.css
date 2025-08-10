@@ -1,0 +1,748 @@
+/*******************************************************
+ *
+ * General
+ *
+ *******************************************************/
+
+#inner-page-wrapper {
+    padding: 0;
+}
+
+#inner-page-wrapper > .container {
+    width: 100%;
+    padding: 0;
+}
+
+#ai-modern-about {
+    position: relative;
+    margin-top: 50px;
+}
+
+#ai-modern-about .ai-modern-about-entry {
+    position: relative;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+#ai-modern-about .ai-modern-about-entry:before,
+#ai-modern-about .ai-modern-about-entry:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#ai-modern-about .ai-modern-about-entry > .container {
+    max-width: 100%;
+}
+
+#ai-modern-about .ai-modern-about-main {
+    position: relative;
+    padding-left: 150px;
+    padding-bottom: 30px;
+}
+
+#ai-modern-about .ai-modern-about-title {
+    position: relative;
+    margin-top: 98px;
+    font-family: var(--font-family-title);
+}
+
+#ai-modern-about .ai-modern-about-title h2 {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#ai-modern-about .ai-modern-about-title h2 span {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+}
+
+#ai-modern-about .ai-modern-about-title h2 strong {
+    display: block;
+    font-size: 75px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+#ai-modern-about .ai-modern-about-photo {
+    position: relative;
+    float: left;
+    margin-right: 22px;
+    margin-bottom: 40px;
+}
+
+#ai-modern-about .ai-modern-about-photo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 67px;
+    bottom: 0;
+    right: calc(100% - 120px);
+    min-width: 310px;
+    width: calc((100vw - (1140px - 120px)) / 2);
+    height: 100vw;
+    background: var(--dark);
+}
+
+#ai-modern-about .ai-modern-about-photo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width: 73px;
+    background: var(--background-color, #ffffff);
+}
+
+#ai-modern-about .ai-modern-about-photo canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+#ai-modern-about .ai-modern-about-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#ai-modern-about .ai-modern-about-info > div + div {
+    margin-left: 45px;
+    padding: 10px 0 5px 40px;
+    border-left: 1px solid rgba(60, 60, 60, 0.05);
+}
+
+#ai-modern-about .ai-modern-about-contact {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#ai-modern-about .wpcf7 form .wpcf7-response-output{
+    color: #ffffff;
+}
+#ai-modern-about .ai-modern-about-contact li {
+    position: relative;
+    display: block;
+}
+
+#ai-modern-about .ai-modern-about-contact li > span {
+    width: 17px;
+    font-size: 14px;
+    color: var(--primary);
+    display: inline-block;
+    margin-right: 7px;
+}
+
+#ai-modern-about .ai-modern-about-contact li > span.envelope {
+    font-size: 11px;
+}
+
+#ai-modern-about .ai-modern-about-contact li a {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #444444;
+    transition: all 0.4s ease-in-out;
+}
+
+#ai-modern-about .ai-modern-about-contact li a:hover {
+    color: var(--primary);
+}
+
+#ai-modern-about .ai-modern-about-smi {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+}
+
+#ai-modern-about .ai-modern-about-smi li {
+    position: relative;
+    display: block;
+    padding: 4px;
+}
+
+#ai-modern-about .ai-modern-about-smi li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+#ai-modern-about .ai-modern-about-smi li a:hover {
+    background-color: var(--secondary);
+}
+
+#ai-modern-about .ai-modern-about-cta {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#ai-modern-about .ai-modern-about-cta li {
+    position: relative;
+    display: block;
+    width: calc(100% / 3);
+}
+
+#ai-modern-about .ai-modern-about-cta li a {
+    position: relative;
+    display: block;
+    outline: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+#ai-modern-about .ai-modern-about-cta li a:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.8;
+    transition: all 0.4s ease-in-out;
+}
+
+#ai-modern-about .ai-modern-about-cta li a:hover:after {
+    opacity: 0;
+}
+
+#ai-modern-about .ai-modern-about-cta li a canvas {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(1);
+    transition: all 0.4s ease-in-out;
+}
+
+#ai-modern-about .ai-modern-about-cta li a:hover canvas {
+    filter: grayscale(0);
+}
+
+#ai-modern-about .ai-modern-about-cta li a div {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 15.35%;
+    padding: 0 34px 54px;
+    border-left: 1px solid #ffffff;
+}
+
+#ai-modern-about .ai-modern-about-cta li a div span {
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+}
+
+#ai-modern-about .ai-modern-about-cta li a div strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.1;
+}
+
+#ai-modern-about .ai-modern-about-testi {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 85px 50px;
+}
+
+#ai-modern-about .ai-modern-about-testi:before,
+#ai-modern-about .ai-modern-about-testi:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#ai-modern-about .ai-modern-about-testi:before {
+    z-index: -2;
+    background: transparent url(https://resources.agentimage.com/images/generate-pages/about-modern-testimonial-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(1);
+}
+
+#ai-modern-about .ai-modern-about-testi:after {
+    z-index: -1;
+    background-color: #f2f2f2;
+    border-left: 1px solid #d4d4d4;
+    opacity: 0.95;
+}
+
+#ai-modern-about .ai-modern-about-testi-slider {
+    position: relative;
+    display: block;
+}
+
+#ai-modern-about .ai-modern-about-testi-slider:not(.slick-initialized) .ai-modern-about-testi-item:nth-child(n+2) {
+    display: none;
+}
+
+#ai-modern-about .ai-modern-about-testi-item {
+    position: relative;
+    display: block;
+    padding: 74px 30px 54px;
+}
+
+#ai-modern-about .ai-modern-about-testi-item h3 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #444444;
+    margin: 0;
+}
+
+#ai-modern-about .ai-modern-about-testi-item img {
+    display: block;
+    margin: 23px auto 0;
+}
+
+#ai-modern-about .ai-modern-about-testi-item p {
+    display: block;
+    width: 1000px;
+    max-width: 100%;
+    margin: 24px auto 0;
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#ai-modern-about .ai-modern-about-testi-item canvas {
+    display: block;
+    margin: 31px auto 0;
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    border: 25px solid #fff;
+    background-color: var(--secondary);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#ai-modern-about .ai-modern-about-testi-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    padding: 0 5.2%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+#ai-modern-about .ai-modern-about-testi-arrow {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    color: #a4a4a4;
+}
+
+#ai-modern-about .ai-modern-about-testi-arrow:hover {
+    color: var(--primary);
+}
+
+#ai-modern-about .ai-template-form-wrap {
+    position: relative;
+    display: block;
+    margin: 85px 50px;
+    padding: 0 30px;
+}
+
+#ai-modern-about .ai-template-form-wrap:before,
+#ai-modern-about .ai-template-form-wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#ai-modern-about .ai-template-form-wrap:after {
+    z-index: -1;
+    background-color: var(--primary);
+    opacity: 0.9;
+}
+
+#ai-modern-about .ai-template-form-wrap > .container {
+    max-width: 100%;
+}
+
+#ai-modern-about .ai-template-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-title {
+    position: relative;
+    display: block;
+    color: #fff;
+    margin-right: 130px;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-title h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-title h2 strong {
+    display: block;
+    font-size: 75px;
+    font-weight: 500;
+    line-height: 1;
+    margin-left: -3px;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-title p {
+    margin: 10px 0 0;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container {
+    display: block;
+    flex-grow: 1;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-row {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -10px;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-row + .ai-template-form-row {
+    margin-top: 46px;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-row.ai-template-form-col-2 .ai-template-form-col {
+    width: 50%;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col label {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col input[type=text],
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col input[type=email],
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 26px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col textarea {
+    resize: none;
+    height: 50px;
+    padding-right: 47px;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col button[type=submit] {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 17px;
+    bottom: 24px;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col button[type=submit]:hover {
+    opacity: 0.75;
+}
+
+#ai-modern-about .ai-template-form .ai-template-form-container .ai-template-form-col button[type=submit]:before {
+    content: '\b0235';
+    font-family: agentimage !important;
+    font-size: 30px;
+}
+
+#ai-modern-about .ai-template-form .wpcf7-not-valid-tip {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: auto;
+    transform: translateY(-50%);
+    width: auto;
+    font-size: 14px;
+}
+
+#ai-modern-about .ai-template-form .wpcf7-response-output {
+    margin: 20px 0 0 !important;
+    padding: 10px !important;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*******************************************************
+ *
+ * Mobile styles and other media queries
+ *
+ *******************************************************/
+
+@media only screen and (max-width: 1440px) {
+    #ai-modern-about .ai-modern-about-cta li a div {
+        left: 0;
+        right: 0;
+        margin: 0 35px;
+    }
+
+    #ai-modern-about .ai-modern-about-cta li a div {
+        padding-bottom: 34px;
+    }
+
+    #ai-modern-about .ai-modern-about-cta li a div strong {
+        font-size: 35px;
+    }
+
+    #ai-modern-about .ai-modern-about-testi-controls {
+        padding: 0 3.5%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    #ai-modern-about .ai-modern-about-info > div + div {
+        margin-left: 35px;
+        padding-left: 35px;
+    }
+
+    #ai-modern-about .ai-template-form .ai-template-form-title {
+        margin-right: 100px;
+    }
+
+    #ai-modern-about .ai-modern-about-testi-controls {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #ai-modern-about .ai-template-form .ai-template-form-title {
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #ai-modern-about .ai-modern-about-photo {
+        margin-right: -30px;
+    }
+
+    #ai-modern-about .ai-modern-about-photo:before {
+        min-width: 200px;
+    }
+
+    #ai-modern-about .ai-modern-about-title h2 span {
+        font-size: 25px;
+    }
+
+    #ai-modern-about .ai-modern-about-title h2 strong,
+    #ai-modern-about .ai-template-form .ai-template-form-title h2 strong {
+        font-size: 60px;
+    }
+
+    #ai-modern-about .ai-modern-about-info > div + div {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+
+    #ai-modern-about .ai-modern-about-info {
+        width: 550px;
+        max-width: 100%;
+    }
+
+    #ai-modern-about .ai-modern-about-cta li a div span {
+        font-size: 18px;
+    }
+
+    #ai-modern-about .ai-modern-about-cta li a div strong {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #ai-modern-about .ai-modern-about-entry {
+        padding: 0;
+    }
+
+    #ai-modern-about .ai-modern-about-photo {
+        float: none;
+        margin: 0;
+    }
+
+    #ai-modern-about .ai-modern-about-photo:before,
+    #ai-modern-about .ai-modern-about-photo:after {
+        display: none;
+    }
+
+    #ai-modern-about .ai-modern-about-main {
+        padding: 0;
+    }
+
+    #ai-modern-about .ai-modern-about-title {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #ai-modern-about .ai-modern-about-info {
+        display: block;
+    }
+
+    #ai-modern-about .ai-modern-about-info > div {
+        margin: 15px 0 0 !important;
+        padding: 0 !important;
+        border-left: none !important;
+    }
+
+    #ai-modern-about .ai-modern-about-title h2 strong,
+    #ai-modern-about .ai-template-form .ai-template-form-title h2 strong {
+        font-size: 45px;
+    }
+
+    #ai-modern-about .ai-template-form-wrap {
+        width: 750px;
+        max-width: 100%;
+        margin: 50px auto;
+    }
+
+    #ai-modern-about .ai-template-form {
+        display: block;
+        padding: 30px 0 50px;
+    }
+
+    #ai-modern-about .ai-template-form .ai-template-form-title {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #ai-modern-about .ai-template-form .ai-template-form-container {
+        margin-top: 50px;
+    }
+
+    #ai-modern-about .ai-modern-about-cta {
+        display: block;
+        width: 750px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #ai-modern-about .ai-modern-about-cta li {
+        width: 100%;
+    }
+
+    #ai-modern-about .ai-modern-about-cta li + li {
+        margin-top: 30px;
+    }
+
+    #ai-modern-about .ai-modern-about-testi {
+        width: 750px;
+        max-width: 100%;
+        margin: 75px auto 50px;
+    }
+
+    #ai-modern-about .ai-modern-about-testi-controls {
+        position: static;
+        justify-content: center;
+        transform: none;
+        padding-bottom: 50px;
+    }
+
+    #ai-modern-about .ai-modern-about-testi-arrow {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    #ai-modern-about .ai-modern-about-testi:after {
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #ai-modern-about .ai-modern-about-testi-item p {
+        padding: 0 20px;
+    }
+}
+

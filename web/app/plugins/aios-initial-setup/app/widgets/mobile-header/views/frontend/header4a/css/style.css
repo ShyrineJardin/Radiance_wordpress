@@ -1,0 +1,58 @@
+/* Header 4B */
+.amh-header-buttons.amh-4a{
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    -webkit-box-shadow: 0 2px 7px rgba(0,1,1,.0);
+    -moz-box-shadow: 0 2px 7px rgba(0,1,1,.0);
+    box-shadow: 0 2px 7px rgba(0,1,1,.0);
+}
+	.amh-header-buttons.amh-4a.amh-fixed-header{
+		background: #fff;
+	    -webkit-box-shadow: 0 2px 7px rgba(0,1,1,.09);
+	    -moz-box-shadow: 0 2px 7px rgba(0,1,1,.09);
+	    box-shadow: 0 2px 7px rgba(0,1,1,.09);
+	}
+		.amh-header-buttons.amh-4a canvas{
+			display: block;
+			width: auto;
+			height: auto;
+			background-size: 100% 100%;
+		}
+		.amh-header-buttons.amh-4a.amh-fixed-header canvas{
+			background-image: url(../images/icon-logo-hover.png) !important;
+		}
+
+		.amh-header-buttons.amh-4a .ai-font-menu{
+			color: #fff;
+		}
+			.amh-header-buttons.amh-4a.amh-fixed-header .ai-font-menu{
+				color: #4c4c4c;
+			}
+	.amh-header-buttons.amh-4a .amh-header-right-btn {
+	    padding: 10px 15px;
+	    width: 60%;
+	    text-align: left;
+	}
+	.amh-header-buttons.amh-4a .amh-center{
+		padding: 0;
+	    width: 17.64%;
+	}
+
+	.amh-header-buttons.amh-4a .amh-center .amh-phone,
+	.amh-header-buttons.amh-4a .amh-center a.amh-phone {
+		cursor: pointer;
+		padding: 17px 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.amh-header-buttons.amh-4a .amh-header-right-btn a.amh-email {
+		font-size:18px;
+	}
+
+	.amh-header-buttons.amh-4a .amh-navigation-trigger {
+		text-align:right;
+		padding:17px 17px 0 0;
+	}

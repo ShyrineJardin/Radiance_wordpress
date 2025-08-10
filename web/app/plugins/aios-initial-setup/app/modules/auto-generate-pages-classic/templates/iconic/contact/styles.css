@@ -1,0 +1,299 @@
+#inner-page-wrapper {
+    overflow: hidden;
+}
+.aios-contact-wrap {
+    position: relative;
+}
+.aios-contact-logo {
+    position: relative;
+    font-family: var(--font-family-title);
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.aios-contact-logo span {
+    font-weight: 500;
+}
+.aios-contact-logo img {
+    display: block;
+    margin: 0 auto;
+}
+.aios-contact-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 1140px;
+    max-width: 100%;
+    margin: 62px auto 0;
+}
+.aios-contact-main > div {
+    width: calc(100% / 3);
+    margin-top: 50px;
+}
+.aios-contact-main > div > span {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+.aios-contact-main > div > span i {
+    font-size: 12px;
+    font-style: normal !important;
+    margin-right: 12px;
+}
+.aios-contact-main > div > span i.location {
+    font-size: 18px;
+}
+.aios-contact-main > div > span p {
+    margin: 0;
+}
+.aios-contact-main > div > span a {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+}
+.aios-contact-main > div > span a:hover {
+    opacity: 0.8;
+}
+.aios-contact-main .aios-contact-smis {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.aios-contact-main .aios-contact-smis > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin: 0 4px;
+    border-radius: 50%;
+    border: solid 1px var(--font-color-default);
+    font-size: 20px;
+    color: var(--font-color-default);
+    transition: all 0.35s ease-in-out;
+}
+.aios-contact-main .aios-contact-smis > a:hover {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+.aios-contact-main .aios-contact-smis > a i {
+    font-style: normal !important;
+}
+.aios-contact-main .aios-contact-form,
+.aios-contact-main .aios-contact-photo {
+    text-align: center;
+    width: 50%;
+    margin-top: 0;
+}
+.aios-contact-main .aios-contact-photo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.aios-contact-form {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.023em;
+    text-transform: uppercase;
+}
+.aios-contact-form p {
+    display: none;
+}
+.aios-contact-form .wpcf7 {
+    max-width: 355px;
+    margin: 0 auto !important;
+}
+.aios-contact-form .wpcf7 .ajax-loader {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+}
+.aios-contact-form form {
+    margin: 0 auto !important;
+}
+.ai-default-cf7wrap :-moz-placeholder,
+.ai-default-cf7wrap :-ms-input-placeholder {
+    font-family: inherit !important;
+}
+.ai-default-cf7wrap .wpcf7-form-control-wrap {
+    display: block;
+    padding: 5px 0;
+}
+.ai-default-cf7wrap .wpcf7-form-control-wrap input[type=email],
+.ai-default-cf7wrap .wpcf7-form-control-wrap input[type=tel],
+.ai-default-cf7wrap .wpcf7-form-control-wrap input[type=text],
+.ai-default-cf7wrap .wpcf7-form-control-wrap textarea {
+    display: block;
+    border: 2px solid var(--dark);
+    font-weight: 400;
+    font-size: 12px;
+    font-family: inherit;
+    letter-spacing: 0.05em;
+    padding: 0 40px 0 20px;
+}
+.ai-default-cf7wrap .wpcf7-form-control-wrap input[type=email],
+.ai-default-cf7wrap .wpcf7-form-control-wrap input[type=tel],
+.ai-default-cf7wrap .wpcf7-form-control-wrap input[type=text],
+.ai-default-cf7wrap .wpcf7-form-control-wrap textarea {
+    outline: none;
+    font-size: 14px;
+    height: 40px;
+    color: var(--dark);
+    margin: 0 !important;
+}
+.ai-default-cf7wrap .wpcf7-form-control-wrap textarea {
+    padding-top: 10px !important;
+    height: 150px;
+    resize: none;
+}
+.ai-default-cf7wrap input[type=submit] {
+    background-color: transparent !important;
+    color: var(--font-color-default) !important;
+    height: 40px;
+}
+.ai-default-cf7wrap input[type=submit]:hover {
+    background-color: var(--primary) !important;
+    color: #ffffff !important;
+}
+.aios-contact-form .wpcf7-response-output {
+    font-size: 14px;
+    text-transform: initial;
+    letter-spacing: 0;
+    margin: 15px 0 0;
+}
+.aios-contact-form .use-floating-validation-tip span.wpcf7-not-valid-tip {
+    text-transform: initial;
+    letter-spacing: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-left: 5px;
+}
+.aios-contact-form .wpcf7-response-output {
+    margin: 0 !important;
+}
+.aios-contact-map {
+    margin-top: 57px;
+    position: relative;
+}
+.aios-contact-map iframe {
+    display: block;
+    width: 100%;
+}
+.aios-contact-cta {
+    position: relative;
+    margin: 50px 0 0;
+}
+.aios-ip-cta-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.aios-ip-cta-list div {
+    padding: 7px;
+    width: calc(100% / 3);
+}
+.aios-ip-cta-list a {
+    width: 100%;
+    padding: 0 20px;
+}
+.aios-ip-cta-list a.aios-site-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+    max-width: 100%;
+    border: 2px solid var(--font-color-default);
+    transition: all 0.35s ease-in-out;
+}
+.aios-ip-cta-list a.aios-site-button::before {
+    content: '';
+    width: 13px;
+    height: 1px;
+    background: var(--font-color-default);
+}
+.aios-ip-cta-list a.aios-site-button::before {
+    transition: all 0.35s ease-in-out;
+}
+.aios-ip-cta-list a.aios-site-button:hover {
+    background: var(--primary);
+}
+.aios-ip-cta-list a.aios-site-button:hover::before {
+    background: #ffffff;
+}
+.aios-ip-cta-list a.aios-site-button span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--font-color-default);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 12px 0 16px;
+}
+.aios-ip-cta-list a.aios-site-button i {
+    font-size: 10px;
+    font-style: normal !important;
+    color: #ffffff;
+}
+.aios-ip-cta-list a.aios-site-button:hover span,
+.aios-ip-cta-list a.aios-site-button:hover i {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 1199px) {
+    .aios-contact-main {
+        align-items: flex-start;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .aios-contact-main {
+        margin-top: 0;
+    }
+    .aios-contact-logo {
+        font-size: 35px;
+    }
+    .aios-contact-form .wpcf7 {
+        max-width: none !important;
+    }
+    .aios-contact-form, .aios-contact-main .aios-contact-photo,
+    .aios-contact-main > div {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .aios-contact-main > div > span {
+        margin-top: 0;
+    }
+    .aios-contact-main .contact-address {
+        text-align: center;
+    }
+    .aios-contact-main .contact-phone-email {
+        margin-top: 0 !important;
+    }
+    .aios-ip-cta-list div {
+        width: 100%;
+    }
+    .aios-ip-cta-list a {
+        width: 320px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .aios-ip-cta-list a {
+        width: 100%;
+    }
+}

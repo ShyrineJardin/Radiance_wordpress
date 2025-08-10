@@ -1,0 +1,48 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/themes/twentytwentyfour/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/cache/*
+web/app/aios-*
+web/wp-content/aios-*
+
+web/app/themes/agentpro-radiance/assets/css
+web/app/themes/agentpro-radiance/assets/js
+
+!web/app/plugins/aios-communities
+web/app/plugins/aios-communities/node_modules
+!web/app/plugins/aios-initial-setup
+web/app/plugins/aios-initial-setup/node_modules
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+auth.json
+
+# WP-CLI
+wp-cli.local.yml
+
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions

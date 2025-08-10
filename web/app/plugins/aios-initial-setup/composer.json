@@ -1,0 +1,13 @@
+{
+  "name": "aios-packages/aios-initial-setup",
+  "description": "Initial Setup for Agent Image Open Source Website.",
+  "type": "wordpress-plugin",
+  "license": "Proprietary",
+  "authors": [
+    {
+      "name": "Agent Image"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}

@@ -1,0 +1,145 @@
+@use "variables" as *;
+@use "functions" as *;
+
+.wpui-tabs {
+  background: $tabs-background;
+  .wpui-tabs-header {
+    float: left;
+    position: relative;
+    width: 220px;
+    padding: 0 30px 0 0;
+    &:after{ @include clear-both(); }
+    @media only screen and (max-width: 991px){
+      width: 100%;
+      padding-right: 0;
+    }
+    * { float: left; }
+    ul {
+      margin: 30px 0 0;
+      li {
+        margin-bottom: $spacer-2;
+        width: 100%;
+        a {
+          // @include border-round();
+          border-radius: .375rem;
+          width: 100%;
+          font-weight: 500;
+          font-family: $heading-font;
+          font-size: 13px;
+          color: #475569;
+          padding: .5rem .75rem .6rem;
+          transition: all 0.2s linear;
+          // text-transform: uppercase;
+          // letter-spacing: 0.05em;
+          &:hover{
+            background-color: #fff;
+            color: #0f172a;
+          }
+        }
+        a.active-panel {
+          background-color: #bcc7d7;
+          color: #000000;
+        }
+      }
+    }
+
+  }
+
+  .wpui-tabs-body {
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+    background-color: #fff;
+    float: left;
+    width: calc(100% - 220px);
+    min-height: 20px;
+    margin-top: 25px;
+    &:after{ @include clear-both(); }
+    @media only screen and (max-width: 991px){
+      width: 100%;
+      box-shadow: 0 2px 5px 3px #E6E6E6;
+    }
+
+    .wpui-tabs-body-loader{
+      float: left;
+      width: 100%;
+      padding: 40px;
+      font-size: 50px;
+      text-align: center;
+      color: #000 !important;
+      opacity: 0.1;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    }
+    .wpui-tabs-content {
+      display: none;
+      float: left;
+      width: 100%;
+      .wpui-tabs-title{
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid $gray-200;
+        padding: 2rem;
+        font-weight: $font-weight-semibold;
+        font-family: $heading-font;
+        font-size: $h4-font-size;
+        color: $dark-color;
+        // text-transform: uppercase;
+      }
+      .wpui-child-tabs{
+        float: left;
+        // background: $gray-100;
+        background: #f1f5f9;
+        border-bottom: 1px solid $gray-200;
+        width: 100%;
+        padding: $spacer-3;
+        li {
+          float: left;
+          a {
+            float: left;
+            padding: $spacer-2 $spacer-3;
+            font-weight: 500;
+            font-family: $heading-font;
+            font-size: $font-size-sm;
+            // letter-spacing: 0.05em;
+            color: $gray-600;
+            text-transform: uppercase;
+            transition: all 0.3s linear;
+            border-radius: .375rem;
+          }
+          a.active-child-panel{
+            // background-color: #003784;
+            // color: $white-color;
+            background-color: #bcc7d7;
+            color: #000000;
+          }
+        }
+      }
+      .wpui-child-tabs-content{
+        display: none;
+        float: left;
+        width: 100%;
+      }
+      .wpui-tabs-container {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 0 $spacer-3;
+        > form {
+          float: left;
+          width: 100%;
+          &:after {
+            @include clear-both();
+          }
+        }
+      }
+    }
+  }
+}

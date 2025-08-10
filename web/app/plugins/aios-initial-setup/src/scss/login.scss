@@ -1,0 +1,594 @@
+@use "sass:string";
+@use "login/variables" as *;
+@use "login/normalize";
+
+body {
+  background: #fff;
+  font-family: var(--font-default);
+  font-size: string.unquote("max(0.972vw, 14px)");
+  color: $color-default;
+}
+
+a {
+  color: var(--brand-color);
+
+  &:hover {
+    color: var(--brand-color-hover);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.screen-reader-text, 
+.screen-reader-text span {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+#wrapper {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+
+  #cover-photo {
+    position: relative;
+    background: url(https://resources.agentimage.com/images/wp-login-aix-ap.jpg) no-repeat top right;
+    background-size: cover;
+    width: 44.167vw;
+
+    .cover-photo-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+      transform: translate(-50%, -50%);
+      font-size: string.unquote("min(6.2vw, 80px)");
+      color: #ffffff;
+
+      &.ai-font-thedesignpeople-longform {
+        font-size: 4.3vw;
+      }
+    }
+  }
+
+  #login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55.833vw;
+    padding: 30px;
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: string.unquote("max(1.725vw, 20px)");
+      text-align: center;
+      margin: 0;
+      color: $color-title;
+      text-decoration: none;
+    }
+
+    .message,
+    #login_error {
+      display: block;
+      width: string.unquote("max(31.944vw, 304px)");
+      margin-top: string.unquote("max(1.25vw, 18px)");
+      padding: string.unquote("max(0.972vw, 14px)");
+      font-size: string.unquote("max(0.972vw, 14px)");
+      text-align: center;
+      line-height: 1.5;
+      border-radius: 4px;
+      color: #856404;
+      background-color: #fff3cd;
+      border: solid 1px #ffeeba;
+    }
+
+    #login_error {
+      color: #721c24;
+      background-color: #f8d7da;
+      border: solid 1px #f5c6cb;
+    }
+
+    form {
+      width: string.unquote("max(31.944vw, 304px)");
+      margin-top: string.unquote("max(2.361vw, 30px)");
+
+      p {
+        margin: 0;
+      }
+
+      label {
+        display: block;
+
+        &[for="user_pass"] {
+          display: flex;
+        }
+
+        #nav {
+          flex-grow: 1;
+          text-align: right;
+        }
+      }
+
+      input:not([type=submit]) {
+        appearance: none;
+        outline: 0 !important;
+        border-radius: 4px;
+        background: $input-background-color;
+        border: string.unquote("max(0.069vw, 1px)") solid $input-border-color;
+        display: block;
+        width: 100%;
+        height: string.unquote("max(3.333vw, 48px)");
+        padding: 0 string.unquote("max(1.25vw, 18px)");
+        margin: string.unquote("max(1.25vw, 18px)") 0 0;
+        font-size: string.unquote("max(1.111vw, 16px)");
+        color: $color-title;
+        caret-color: var(--brand-color);
+
+        &:focus,
+        &:focus-visible {
+          border-bottom: solid string.unquote("max(0.139vw, 2px)") var(--brand-color);
+        }
+
+        &#pass1-text {
+          display: none;
+          position: absolute;
+          top: 0;
+          margin: 0;
+        }
+      }
+
+      .show-password {
+        #pass1-text {
+          display: block !important;
+        }
+      }
+
+      .wp-pwd {
+        position: relative;
+        .button{
+          display: block;
+          appearance: none;
+          border: 0;
+          outline: 0;
+          background-color: transparent;
+          position: absolute;
+          right: string.unquote("max(1vw, 14px)");
+          top: string.unquote("max(1vw, 14px)");
+        }
+      }
+
+      .forgetmenot {
+        display: none !important;
+      }
+
+      .user-pass-wrap,
+      .pw-weak {
+        margin-top: string.unquote("max(1.25vw, 18px)");
+      }
+
+      .pw-weak label {
+        margin-top: string.unquote("max(0.694vw, 10px)");
+        margin-bottom: 0;
+      }
+
+      #pass-strength-result {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: string.unquote("max(0.694vw, 10px)");
+        font-weight: 600;
+        font-size: string.unquote("max(0.972vw, 14px)");
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 7px;
+          border-radius: 10px;
+          background-color: #e1e1e1;
+          margin-top: 5px;
+          max-width: string.unquote("max(19.286vw, 270px)");
+          transition: width $transition;
+        }
+        &::after {
+          position: absolute;
+          width: 0;
+        }
+        &.empty::after {
+          content: 'Empty';
+          position: static;
+          width: auto;
+          height: auto;
+          margin-top: auto;
+          background-color: transparent;
+        }
+        &.short::after {
+          width: 20%;
+          background-color: #dc3545;
+        }
+        &.bad::after {
+          width: 35%;
+          background-color: #ef5c6a;
+        }
+        &.good::after {
+          width: 50%;
+          background-color: #ffc107;
+        }
+        &.strong::after {
+          width: 100%;
+          background-color: #28a745;
+        }
+      }
+
+      .description{
+        &.indicator-hint {
+          margin-top: string.unquote("max(1.25vw, 18px)");
+        }
+      }
+
+      .basic-captcha,
+      .pw-weak {
+        display: flex;
+        align-items: center;
+        margin-top: string.unquote("max(1.25vw, 18px)");
+        label {
+          display: flex !important;
+          align-items: center;
+          font-size: string.unquote("max(0.972vw, 14px)") !important;
+        }
+        input[type=checkbox] {
+          position: relative;
+          margin-right: string.unquote("max(1.25vw, 18px)");
+          margin-top: 0;
+          width: string.unquote("max(1.944vw, 28px)");
+          height: string.unquote("max(1.944vw, 28px)");
+          padding: 0;
+          border-bottom: string.unquote("max(0.069vw, 1px)") solid $input-border-color !important;
+          cursor: pointer;
+          &::before {
+            content: "\b0126";
+            font-family: agentimage!important;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: string.unquote("max(2.361vw, 34px)");
+            color: var(--brand-color);
+            opacity: 0;
+          }
+
+          &:checked::before {
+            opacity: 1;
+          }
+        }
+        label {
+          margin-top: 0;
+        }
+      }
+
+      #g-recaptcha {
+        // display: none;
+        max-width: 304px;
+        margin: string.unquote("max(2.222vw, 32px)") auto 0;
+        > div {
+          width: 100% !important;
+        }
+      }
+
+      &.admin-email-confirm-form,
+      .submit {
+        input,
+        button,
+        .button {
+          border-radius: 4px;
+          border: 0;
+          outline: 0;
+          background-color: var(--brand-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: string.unquote("max(3.333vw, 48px)");
+          margin: string.unquote("max(2.222vw, 32px)") auto 0;
+          font-family: var(--font-button);
+          font-size: string.unquote("max(1.111vw, 16px)");
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: background-color $transition;
+          color: #ffffff;
+
+          &:disabled {
+            background-color: #B8B8B8;
+          }
+
+          &:not(:disabled) {
+            cursor: pointer;
+          }
+
+          &:hover:not(:disabled) {
+            background-color: var(--brand-color-hover) !important;
+          }
+        }
+
+        .wp-generate-pw {
+          background-color: $color-default;
+          margin-top: 0;
+          &:hover {
+            background-color: $color-title;
+          }
+        }
+      }
+
+
+      &.admin-email-confirm-form {
+        .admin-email__heading {
+          display: none;
+        }
+        .admin-email__details {
+          margin-top: 12px;
+        }
+        .button:not(input) {
+          background-color: #B8B8B8;
+        }
+        input {
+          margin-top: 15px !important;
+        }
+        .admin-email__actions-secondary {
+          margin: string.unquote("max(2.222vw, 32px)") auto 0;
+          text-align: center;
+        }
+      }
+    }
+
+    #backtoblog {
+      margin-top: string.unquote("max(1.806vw, 26px)");
+
+      a {
+        font-family: var(--font-button);
+        font-weight: 600;
+        font-size: string.unquote("max(0.972vw, 14px)");
+        text-transform: uppercase;
+        color: $color-default;
+        text-decoration: none;
+        transition: color $transition;
+
+        &:hover {
+          color: $color-title;
+        }
+      }
+    }
+
+    #powered-by {
+      margin-top: string.unquote("max(3.472vw, 50px)");
+      color: #000000;
+    }
+  }
+
+  .login-action-lostpassword,
+  .login-action-rp {
+    #nav {
+      display: none;
+    }
+  }
+}
+
+.login-action-lostpassword {
+  .message {
+    display: none !important;
+  }
+}
+
+.interim-login {
+  #cover-photo {
+    display: none !important;
+  }
+  #login {
+    width: 100% !important;
+  }
+}
+
+// Reduxlabs layout
+body.reduxlabs {
+  #wrapper {
+    #cover-photo {
+      background-size: auto;
+      background-repeat: repeat;
+
+      &::before,
+      &::after {
+        content: '';
+        background: url(https://resources.agentimage.com/images/wp-login-reduxlabs-accent.png) no-repeat center;
+        background-size: cover;
+        width: string.unquote("max(14.931vw, 215px)");
+        height: string.unquote("max(14.861vw, 214px)");
+        position: absolute;
+        z-index: 0;
+      }
+
+      &::before {
+        top: string.unquote("max(3.472vw, 50px)");
+        right: string.unquote("max(3.472vw, 50px)");
+        opacity: .15;
+      }
+
+      &::after {
+        bottom: string.unquote("max(3.472vw, 50px)");
+        left: string.unquote("max(3.472vw, 50px)");
+        opacity: .03;
+      }
+    }
+    #login {
+      h1 {
+        font-weight: 500;
+        color: var(--brand-color);
+      }
+
+      .message,
+      #login_error {
+        border-radius: 0;
+      }
+
+      form {
+        label {
+          font-size: 0;
+        }
+
+        input:not([type=submit]) {
+          background-color: transparent;
+          border-radius: 0;
+          border: 0;
+          border-bottom: solid string.unquote("max(0.139vw, 2px)") var(--brand-color);
+          font-size: string.unquote("max(0.972vw, 14px)");
+          color: var(--brand-color);
+          // text-transform: uppercase;
+          letter-spacing: .1em;
+          margin-top: 0;
+
+          &:focus,
+          &:focus-visible {
+            border-bottom-color: var(--brand-color-hover);
+          }
+        }
+
+        input[type=checkbox] {
+          border: solid string.unquote("max(0.139vw, 2px)") #E2E2E2 !important;
+
+          &:focus,
+          &:focus-visible {
+            border-bottom-color: var(--brand-color-hover);
+          }
+        }
+
+        &.admin-email-confirm-form,
+        .submit {
+          input,
+          button,
+          .button {
+            border-radius: 0;
+            font-weight: 700;
+            font-size: string.unquote("max(0.972vw, 14px)");
+            height: string.unquote("max(4.653vw, 67px)");
+            letter-spacing: .1em;
+
+            .ai-font-arrow-i-n {
+              font-size: string.unquote("max(0.833vw, 12px)");
+              margin-left: string.unquote("max(0.972vw, 14px)");
+            }
+          }
+        }
+
+        #nav {
+          margin-top: 14px;
+          text-align: right;
+          a {
+            color: #8ed2df;
+          }
+        }
+      }
+
+      #backtoblog {
+        a {
+          font-weight: 700;
+          font-size: string.unquote("max(0.972vw, 14px)");
+          height: string.unquote("max(4.653vw, 67px)");
+          letter-spacing: .1em;
+          color: var(--brand-color)
+        }
+      }
+    }
+  }
+
+  #powered-by {
+    display: none;
+  }
+
+  #continue-with-facebook {
+    #continue-with-fb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      font-size: string.unquote("max(0.972vw, 14px)");
+      height: string.unquote("max(4.653vw, 67px)");
+
+      #aidash-facebook {
+        transform: translateY(0);
+        position: static;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #wrapper {
+    flex-direction: column;
+
+    #cover-photo {
+      background-position: center;
+      width: 100%;
+      height: 120px;
+    }
+
+    #login {
+      width: 100%;
+      height: auto;
+      padding: 30px 15px;
+
+      .message,
+      #login_error,
+      form {
+        max-width: 429px;
+        width: 100%;
+      }
+    }
+  }
+
+  body.reduxlabs {
+    #wrapper {
+      #cover-photo {
+        height: 200px;
+
+        &::before,
+        &::after {
+          width: 120px;
+          height: 119px;
+        }
+
+        &::before {
+          top: 15px;
+          right: 30px;
+        }
+        &::after {
+          bottom: 15px;
+          left: 30px;
+        }
+      }
+    }
+  }
+}

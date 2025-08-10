@@ -1,0 +1,19 @@
+/* IHF */
+#ihf-map-canvas .leaflet-top.leaflet-right {
+    z-index: 999;
+}
+#ihf-main-container .glyphicon.glyphicon-remove-circle {
+    color: #fff!important;
+}
+
+/* recaptcha */
+.grecaptcha-badge {
+    z-index: 999!important;
+}
+
+/* WPCF7 */
+.wpcf7 .use-floating-validation-tip .wpcf7-not-valid-tip {
+    position: absolute;
+    width: auto;
+    top: 20%;
+}

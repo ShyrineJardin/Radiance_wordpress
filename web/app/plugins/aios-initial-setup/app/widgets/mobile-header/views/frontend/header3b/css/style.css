@@ -1,0 +1,18 @@
+/* Header 3B */
+
+	.amh-header-buttons.amh-3b .amh-center{
+		padding: 0;
+	}
+	
+	.amh-header-buttons.amh-3b .amh-center .amh-phone,
+	.amh-header-buttons.amh-3b .amh-center a.amh-phone {
+		cursor: pointer;
+		padding: 17px 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.amh-header-buttons.amh-3b .amh-header-right-btn a.amh-email {
+		font-size:18px;
+	}

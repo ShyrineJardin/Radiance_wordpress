@@ -1,0 +1,95 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with Composer, easier configuration, and an improved folder structure",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://gitlab.forge99.com/api/v4/group/239/-/packages/composer/packages.json"
+    },
+    {
+      "type": "composer",
+      "url": "https://composer.deliciousbrains.com"
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "aios-packages/aios-agents": "*",
+    "aios-packages/aios-custom-ihomefinder": "*",
+    "aios-packages/aios-dashboard": "*",
+    "aios-packages/aios-listings": "*",
+    "aios-packages/aios-roadmaps-v2": "*",
+    "aios-packages/aios-slider": "*",
+    "aios-packages/aios-testimonials": "*",
+    "aios-packages/aios-wp-offload-media-tweaks": "*",
+    "aios-packages/optima-express": "*",
+    "composer/installers": "^2.3",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "*",
+    "deliciousbrains-plugin/wp-offload-media": "*",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0.4",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "6.7.2",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.1.0",
+    "vlucas/phpdotenv": "^5.6.1",
+    "wp-cli/wp-cli-bundle": "^2.11",
+    "wpackagist-plugin/contact-form-7": "^5.9.8",
+    "wpackagist-plugin/post-types-order": "^2.3",
+    "wpackagist-plugin/wordpress-seo": "^23.6"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.10.3",
+    "roave/security-advisories": "dev-latest"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "phpcs"
+    ]
+  }
+}

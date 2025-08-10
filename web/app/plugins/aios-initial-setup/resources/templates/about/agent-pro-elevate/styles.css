@@ -1,0 +1,343 @@
+#ip-elevate-about  .ip-elevate-about{
+
+}
+#ip-elevate-about  .ip-elevate-about__container {
+}
+
+
+#ip-elevate-about  .ip-elevate-about__photo {
+    position: relative;
+    max-width: 408px;
+    margin: 0 auto;
+}
+
+#ip-elevate-about  .ip-elevate-about__photo--wrap{
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#ip-elevate-about  .ip-elevate-about__photo--profile{
+    position: relative;
+    width: 100%;
+    padding-left: 41px;
+    padding-top: 41px;
+
+}
+#ip-elevate-about  .ip-elevate-about__photo--profile img {
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 20;
+}
+#ip-elevate-about .ip-elevate-about__photo--profile .ip-elevate-about__photo--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87%;
+    height: calc(100% - 43.14px);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100);
+}
+
+
+#ip-elevate-about  .ip-elevate-about__photo .ip-elevate-about__contactInfo{
+    display: none;
+}
+
+#ip-elevate-about  .ip-elevate-about__content {
+    width: 100%;
+    padding: 40px 0 0;
+}
+#ip-elevate-about .ip-elevate-about__content .about__title{
+    text-align: center;
+    padding: 0 0 20px;
+}
+#ip-elevate-about .ip-elevate-about__content .about__title h2 {
+    display: inline-block;
+    line-height: 1;
+}
+#ip-elevate-about .ip-elevate-about__content .about__title h2 small {
+    font-size: 16px;
+    display: block;
+    color: var(--primary-text, #000000);
+    font-family: var(--font-family-default);
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+#ip-elevate-about .ip-elevate-about__content .about__title h2 span {
+    display: block;
+    font-size: 50px;
+    font-family: var(--font-family-title);
+    color: var(--primary-text, #000000);
+    display: block;
+    padding: 15px 0;
+}
+#ip-elevate-about .ip-elevate-about__content .about__title h2  em{
+    font-family: var(--font-family-default);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    font-style: normal;
+    display: block;
+}
+#ip-elevate-about .ip-elevate-about__content p {
+    text-align: center;
+    color: var(--primary-text);
+}
+
+
+#ip-elevate-about .ip-elevate-about__content h4{
+    font-size: 24px;
+    margin: 0;
+}
+
+
+
+#ip-elevate-about .ip-elevate-about__contactInfo{
+    padding: 20px 0 0;
+}
+    #ip-elevate-about .ip-elevate-about__contactInfo ul{
+        margin: 0;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+        #ip-elevate-about .ip-elevate-about__contactInfo ul li .contact__icon{
+
+        }
+        #ip-elevate-about .ip-elevate-about__contactInfo ul li  .contact__content{
+            margin-left: 9px;
+            font-size: 16px;
+            line-height: 25.6px;
+        }
+            #ip-elevate-about .ip-elevate-about__contactInfo ul li  .contact__content a{
+                color: var(--primary-text);
+                font-weight: 500;
+                transition: var(--transition);
+            }
+            
+            #ip-elevate-about .ip-elevate-about__contactInfo ul li svg path{
+                fill: var(--primary-text);  
+            }
+
+            #ip-elevate-about .ip-elevate-about__contactInfo ul li a:hover{
+                opacity: 0.8;
+            }
+    #ip-elevate-about .ip-elevate-about__contactInfo .cta-button{
+        text-align: center;
+        padding: 35px 0 0;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo .cta-button a{
+        display: inline-block;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #fff;
+        transition: var(--transition);
+        padding: 19px 55px;
+        background: var(--primary);
+        border: 1px solid var(--primary);
+    }
+
+        #ip-elevate-about .ip-elevate-about__contactInfo .cta-button a:hover{
+            background: #868686;
+            border-color: #fff;
+            color: #ffffff;
+        }
+
+
+#ip-elevate-about  .ip-elevate-about__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    padding: 28px 0 0;
+}
+    #ip-elevate-about  .ip-elevate-about__socials a{
+
+    }
+
+    #ip-elevate-about  .ip-elevate-about__socials a span{
+        display: none;
+    }
+
+    #ip-elevate-about  .ip-elevate-about__socials a i{
+        font-style: normal;
+        color: var(--primary-text);
+        font-size: 21px;
+    }
+        #ip-elevate-about  .ip-elevate-about__socials a:hover{
+            color: var(--secondary-text);
+        }
+
+
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+@media (min-width:744px) {
+
+
+    #ip-elevate-about .ip-elevate-about__photo{
+        max-width: 440px;
+    }
+
+    #ip-elevate-about .ip-elevate-about__content{
+        padding: 59px 0 0;
+    }
+    #ip-elevate-about .ip-elevate-about__content .about__title{
+        padding: 0 0 30px;
+    }
+    #ip-elevate-about .ip-elevate-about__content .about__title h2 span{
+        font-size: 75px;
+    }
+    #ip-elevate-about .ip-elevate-about__contactInfo{
+        padding: 40px 0 0;
+    }
+    #ip-elevate-about .ip-elevate-about__contactInfo ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo .cta-button{
+        padding: 59px 0 0;
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1024px) {
+
+
+    #ip-elevate-about .ip-elevate-about__container{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #ip-elevate-about .ip-elevate-about__photo{
+        flex-shrink: 0;
+        max-width: 373px;
+        min-width: 373px;
+    }
+    #ip-elevate-about .ip-elevate-about__photo--profile{
+        padding-left: 37px;
+        padding-top: 47px;
+    }
+    #ip-elevate-about .ip-elevate-about__content{
+        margin-left: 50px;
+        padding: 0;
+    }
+    #ip-elevate-about .ip-elevate-about__content .about__title{
+        text-align: left;
+        padding: 0;
+    }
+
+    #ip-elevate-about .ip-elevate-about__content .about__title h2 small{
+        font-size: 18px;
+        letter-spacing: 9px;
+    }
+
+    #ip-elevate-about .ip-elevate-about__content .about__title h2 em{
+        font-size: 18px;
+    }
+    #ip-elevate-about .ip-elevate-about__content p{
+        text-align: left;
+    }
+
+    #ip-elevate-about .ip-elevate-about__photo .ip-elevate-about__contactInfo{
+        display: block;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo{
+        display: none;
+        padding: 47px 41px;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo ul{
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo ul li{
+        
+    }
+    
+
+    #ip-elevate-about .ip-elevate-about__contactInfo ul li .svg-phone-icon{
+        width: 28px;
+        height: 28px;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo ul li .contact__content{
+        margin-left: 15px;
+    }
+
+    #ip-elevate-about .ip-elevate-about__socials{
+        justify-content: flex-start;
+        padding: 35px 0 0;
+    }
+  
+    #ip-elevate-about .ip-elevate-about__contactInfo .cta-button{
+        padding: 40px 0 0;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo .cta-button{
+        text-align: left;
+    }
+    #ip-elevate-about .ip-elevate-about__contactInfo .cta-button a{
+        padding: 15px 40px;
+    }
+
+}
+
+/* hi-res laptops and desktops */ 
+@media (min-width:1280px) { 
+
+
+    #ip-elevate-about .ip-elevate-about__content .about__title{
+        padding-bottom: 15px;
+    }
+    #ip-elevate-about .ip-elevate-about__content .about__title h2 span{
+        font-size: 90px;
+    }
+
+    #ip-elevate-about .ip-elevate-about__photo .ip-elevate-about__contactInfo{
+        padding: 45px 80px;
+    }
+    #ip-elevate-about .ip-elevate-about__photo--profile{
+        padding-left: 80px;
+        padding-top: 80px;
+    }
+    #ip-elevate-about .ip-elevate-about__photo {
+        max-width: 560px;
+        min-width: 560px;
+    }
+    #ip-elevate-about .ip-elevate-about__content {
+        margin-left: 75px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    #ip-elevate-about .ip-elevate-about__content p{
+        line-height: 1.8;
+    }
+
+    #ip-elevate-about .ip-elevate-about__contactInfo .cta-button{
+        padding: 35px 0 0;
+    }
+}

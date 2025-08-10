@@ -1,0 +1,47 @@
+@use "variables" as *;
+@use "functions" as *;
+
+.wpui-pagination{
+  display: block;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  padding: $spacer-3 0;
+  .page-numbers{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 25px;
+    color: $dark-color;
+    width: 25px;
+    height: 25px;
+    margin: 0 7px;
+    transition: color 0.2s linear;
+    &:hover{
+      color: $black-color;
+    }
+    &.current{
+      background: $secondary-color;
+      font-weight: 700;
+      color: $white-color;
+      @include border-circle();
+    }
+    &.prev,
+    &.next{
+      border: solid 1px #dadada;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: initial;
+      color: #269ecb;
+      text-transform: uppercase;
+      padding: 10px $spacer-3;
+      width: auto;
+      height: auto;
+      transition: background-color 0.2s linear;
+      @include border-round();
+      &:hover{
+        background-color: #E6E6E6;
+      }
+    }
+  }
+}

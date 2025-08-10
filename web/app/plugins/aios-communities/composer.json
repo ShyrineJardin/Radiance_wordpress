@@ -1,0 +1,13 @@
+{
+  "name": "aios-packages/aios-communities",
+  "description": "Display of client's communities",
+  "type": "wordpress-plugin",
+  "license": "Proprietary",
+  "authors": [
+    {
+      "name": "Agent Image"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}

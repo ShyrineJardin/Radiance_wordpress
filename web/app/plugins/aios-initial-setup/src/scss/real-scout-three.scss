@@ -1,0 +1,203 @@
+@use 'mixins/mediaqueries' as *;
+
+.rs-single {
+    $wrapper: &;
+
+    &-vthree {
+        overflow: hidden;
+        position: relative;
+        
+        #{$wrapper} {
+            &-bg {
+                &-default {
+                    background-position: left;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 71.795%;
+
+                    @include md {
+                        height: 62.579%;
+                    }
+
+                    @include lg {
+                        width: 61.23%;
+                        height: 100%;
+                    }
+
+                    @include xl {
+                        width: 55.833%;
+                    }
+                }
+
+                &-accent {
+                    position: absolute;
+                    top: 71.795%;
+                    left: 0;
+                    width: 100%;
+                    height: 28.205%;
+
+                    @include md {
+                        top: 62.579%;
+                        height: 37.421%;
+                    }
+
+                    @include lg {
+                        top: 0;
+                        right: 0;
+                        left: auto;
+                        width: 38.77%;
+                        height: 100%;
+                    }
+
+                    @include xl {
+                        width: 44.167%
+                    }
+                }
+            }
+
+            &-container {
+                position: relative;
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                gap: 42px;
+                padding: 80px 20px 72px;
+
+                @include md {
+                    gap: 73px;
+                    padding: 87px 40px 72px;
+                }
+
+                @include lg {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 24px;
+                    padding: 85px 40px;
+                }
+
+                @include xl {
+                    gap: 52px;
+                    padding: 51px 48px;
+                    max-width: 1440px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            &-inner {}
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                @include lg {
+                    max-width: 414px;
+                    min-width: 414px;
+                    align-items: flex-start;
+                    text-align: left;
+                }
+
+                @include xl {
+                    max-width: 498px;
+                    min-width: 498px;}
+
+                h2 {
+                    max-width: 408px;
+                    font-size: 28px !important;
+                    line-height: 1.2;
+
+                    @include md {
+                        font-size: 34px !important;
+                        line-height: 1.3;
+                    }
+
+                    @include lg {
+                        font-size: 38px !important;
+                        line-height: 1.2;
+                    }
+
+                    @include xl {
+                        max-width: 100%;
+                        font-size: 44px !important;
+                    }
+
+                    br {
+                        @include xsm {
+                            display: none;
+                        }
+
+                        @include lg {
+                            display: block;
+                        }
+                    }
+                }
+
+                p {
+                    max-width: 408px;
+                    font-size: 14px !important;
+                    line-height: 1.7;
+
+                    @include xl {
+                        max-width: 100%;
+                    }
+
+                    br {
+                        @include xl {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &-btn {
+                max-width: 100%;
+                width: 100%;
+                margin-top: 8px;
+                font-size: 16px !important;
+
+                @include xsm {
+                    max-width: 339px;
+                }
+
+                @include lg {
+                    margin-top: 24px;
+                }
+            }
+
+            &-pby {
+                margin-top: 20px;
+                justify-content: center;
+
+                @include md {
+                    margin-top: 16px;
+                }
+
+                @include lg {
+                    margin-top: 36px;
+                    justify-content: flex-start;
+                }
+                
+                span {
+                    color: #1C1E26;
+                }
+            }
+
+            &-device {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 664px;
+                    width: 100%;
+
+                    @include lg {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

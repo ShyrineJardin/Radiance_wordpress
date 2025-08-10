@@ -1,0 +1,34 @@
+#inner-page-wrapper{
+    background: #fff;
+    margin-bottom: 0 !important;
+    padding: 20px 0;
+}
+    #inner-page-wrapper .container{
+        width: 100%;
+    }
+
+    #inner-page-wrapper #content{
+        
+    }
+
+        #inner-page-wrapper #content .entry-title{
+            color: #000;
+        }
+
+
+        #inner-page-wrapper #content .entry p{
+            color: #000;
+        }
+        #inner-page-wrapper #content ul{
+            margin: 0;
+            list-style: none;
+        }
+
+        #inner-page-wrapper #content i{
+            font-style: normal;
+        }
+
+
+        #inner-page-wrapper #content .entry-content a {
+            color: inherit;
+        }

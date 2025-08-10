@@ -1,0 +1,589 @@
+#inner-page-wrapper>.container {
+    width: 100%;
+    padding: 0;
+}
+
+#ai-classic-about-wrapper {}
+
+/** Fix About Details **/
+.ai-classic-about-content {
+    position: relative;
+    padding-bottom: 125px;
+}
+
+.ai-classic-about-content .container {}
+
+.ai-classic-about-content:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 561px;
+    background: var(--primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ai-classic-about-details {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    padding: 0 15px;
+}
+
+.ai-classic-about-agentprofile {
+    float: left;
+    width: 44.9%;
+    margin-right: 5.7%;
+    margin-bottom: 15px;
+    position: relative
+}
+
+.ai-classic-about-agentprofile img {
+    display: block;
+    width: 100%;
+}
+
+.ai-classic-agent-contact-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: var(--primary);
+    padding: 20px;
+}
+
+.ai-classic-email-phone {}
+
+.ai-classic-email-phone span {
+    color: var(--background-color, #ffffff);
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    padding: 0 15px;
+}
+
+.ai-classic-email-phone a {
+    transition: all 0.3s ease-in-out;
+    color: var(--background-color, #ffffff);
+}
+
+.ai-classic-email-phone a:hover {
+    opacity: .7;
+}
+
+.ai-classic-email-phone i {
+    font-size: 13px;
+    font-style: normal;
+    margin-right: 10px;
+}
+
+.ai-classic-about-smi {
+    margin-top: 15px;
+}
+
+.ai-classic-about-smi a {
+    color: var(--background-color, #ffffff);
+    font-size: 18px;
+    padding: 0 8px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.ai-classic-about-smi a:hover {
+    opacity: .7;
+}
+
+.ai-classic-about-greetings {
+    padding-right: 3.6%;
+}
+
+.ai-classic-about-greetings h1 {
+    font-weight: 600;
+    font-size: 75px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    padding-top: 71px;
+    font-family: var(--font-family-title);
+    display: inline-block;
+}
+
+.ai-classic-about-greetings h1 span {
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--primary);
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: var(--font-family-title);
+    text-align: center;
+    display: block;
+}
+
+.ai-classic-about-greetings p {
+    color: #4e4e4e;
+    font-size: 15px;
+    letter-spacing: 0.005em;
+    line-height: 2;
+    padding: 20px 0;
+}
+
+/** Fix About Details **/
+
+/** Contact Area **/
+.ai-template-form-wrap {
+    width: 100%;
+    margin: 117px 0;
+}
+
+.ai-template-form {
+    border: 10px solid rgba(0,0,0,.1);
+    padding: 72px 13.50%;
+}
+
+.ai-template-form h2 {
+    color: #222222;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--font-family-title);
+    text-transform: uppercase;
+}
+
+.ai-template-form p {
+    text-align: center;
+    color: var(--primary);
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.ai-template-form .ai-template-form-container {
+    margin-top: 50px;
+}
+
+.ai-template-form-container .ai-template-form-row {
+    display: flex;
+    padding: 16px 0;
+}
+
+.ai-template-form-container .ai-template-form-row:last-child {
+    padding-bottom: 0;
+}
+
+.ai-template-form-container .ai-template-form-row .ai-template-form-col {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.ai-template-form-container .ai-template-form-row.ai-template-form-col-2 .ai-template-form-col {
+    width: 50%;
+}
+
+.ai-template-form-container .ai-template-form-row label {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.ai-template-form-container .ai-template-form-row input[type="email"],
+.ai-template-form-container .ai-template-form-row input[type="text"] {
+    height: 35px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--dark);
+    transition: all 0.3s ease-in-out;
+    padding: 10px 3px;
+}
+
+.ai-template-form-container .ai-template-form-row textarea {
+    width: 100%;
+    height: 46px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--dark);
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 3px;
+
+}
+
+.ai-template-form-container .ai-template-form-row input[type="email"]:focus,
+.ai-template-form-container .ai-template-form-row input[type="text"]:focus,
+.ai-template-form-container .ai-template-form-row textarea:focus {
+    outline: 0;
+}
+
+.ai-template-form-container .ai-template-form-row button[type="submit"] {
+    width: 100%;
+    border: solid 1px var(--primary);
+    background: transparent;
+    height: 57px;
+    font-size: 15px;
+    color: var(--primary, #000000);
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 182px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    margin: 32px auto 0;
+}
+
+.ai-template-form-container .ai-template-form-row button[type="submit"]:hover {
+    background: var(--primary, #000000);
+    color: var(--background-color, #ffffff);
+}
+.ai-template-form-container .wpcf7-not-valid-tip {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: auto;
+    transform: translateY(-50%);
+    width: auto;
+    font-size: 14px;
+}
+.ai-template-form-container .wpcf7-response-output {
+    margin: 0 !important;
+    padding: 10px !important;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ai-classic-about-cta {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.ai-classic-about-cta:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 276px;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.ai-classic-about-cta .container {
+    position: relative;
+    z-index: 5;
+}
+
+.ai-classic-about-cta .ai-classic-about-cta-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col {
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col a {
+    display: block;
+    color: var(--background-color, #ffffff);
+}
+
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col canvas {
+    display: block;
+    width: 100%;
+    border: 10px solid var(--background-color, #ffffff);
+    background-size: cover;
+    transition: all .25s ease-in-out;
+}
+
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col:hover canvas {
+    filter: brightness(75%);
+}
+
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col h3 {
+    text-align: center;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: var(--font-family-title);
+    padding: 18px 0;
+    transition: all .3s linear;
+
+}
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col:hover h3 {
+    /*color: var(--primary);*/
+}
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col h3 span {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: var(--font-family-default);
+    line-height: 1.5;
+    transition: all .3s linear;
+
+}
+.ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col:hover h3 span {
+    /*color: var(--primary);*/
+}
+.ai-classic-about-testimonials {
+    padding: 145px 0;
+    background: #e5e5e5;
+}
+.ai-classic-about-testimonials-container {
+    border: 7px solid var(--background-color, #ffffff);
+    padding-bottom: 60px;
+}
+
+.ai-classic-about-testimonials-title {
+    text-align: center;
+}
+
+.ai-classic-about-testimonials-title h2 {
+    background: #e5e5e5;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 1;
+    margin-top: -46px;
+    padding: 0 40px;
+    font-family: var(--font-family-title);
+}
+
+.ai-classic-about-testimonials-title h2 span {
+    display: block;
+}
+
+.ai-classic-about-testimonials-title h2:after {
+    display: block;
+    content: "";
+    width: 72px;
+    height: 7px;
+    background: var(--primary);
+    margin: 40px auto;
+}
+
+.ai-classic-about-slides {
+    position: relative;
+    margin: 15px 0;
+}
+
+.ai-classic-about-slides .slick-arrow {
+    position: absolute;
+    top: 15%;
+    border: 0;
+    width: 50px;
+    height: 49px;
+    background: var(--background-color, #ffffff);
+    z-index: 6;
+    font-size: 0;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+
+.ai-classic-about-slides .slick-arrow:after {
+    display: block;
+    content: "";
+    font-size: 20px;
+    font-family: agentimage !important;
+}
+
+.ai-classic-about-slides .slick-arrow.slick-prev {
+    left: 0;
+}
+
+.ai-classic-about-slides .slick-arrow.slick-prev:after {
+    content: "\b0205";
+}
+
+.ai-classic-about-slides .slick-arrow.slick-next {
+    right: 0;
+}
+
+.ai-classic-about-slides .slick-arrow.slick-next:after {
+    content: "\b0206";
+}
+
+.ai-classic-about-slides .slick-arrow:hover {
+    background: var(--primary);
+    color: var(--background-color, #ffffff);
+}
+
+.ai-classic-about-slide {
+    display: flex !important;
+    padding: 0 15%;
+}
+
+.ai-classic-about-slide a {
+    display: flex;
+}
+
+.ai-classic-about-slide .ai-classic-about-annotation {
+    width: 86px;
+    height: 86px;
+    background-image: url(https://resources.agentimage.com/images/generate-pages/ai-classic-qoutation.png);
+    background-color: var(--primary);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 60px;
+}
+
+.ai-classic-about-slide .ai-classic-about-testimonials-content {
+    position: relative;
+}
+
+.ai-classic-about-slide .ai-classic-about-testimonials-content .ai-classic-testi-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+    align-items: center;
+
+}
+
+.ai-classic-about-slide .ai-classic-about-testimonials-content p {
+    color: var(--font-color-default);
+    font-size: 15px;
+    line-height: 2;
+}
+
+.ai-classic-about-slide .ai-classic-about-testimonials-content h4 {
+    color: var(--font-color-default);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.6;
+
+}
+
+.ai-classic-about-slide .ai-classic-about-testimonials-content span {
+    display: block;
+    color: var(--primary);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.ai-classic-about-slide .ai-classic-about-testimonials-content .ai-classic-about-star i {
+    color: var(--primary);
+    font-size: 20px;
+    margin: 0 2px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .ai-classic-about-greetings h1 {
+        font-size: 55px;
+        line-height: 1;
+    }
+
+    .ai-classic-about-greetings h3 {
+        font-size: 26px;
+    }
+
+    .ai-classic-about-agentprofile {
+        width: 42.9%
+    }
+}
+@media only screen and (max-width: 991px) {
+
+    .ai-classic-about-agentprofile {
+        float: none;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .ai-template-form {
+        padding: 72px 1%;
+    }
+
+    .ai-classic-about-greetings {
+        padding: 0 15px;
+    }
+
+    .ai-classic-about-greetings h1 {
+        font-size: 48px;
+        padding-top: 30px;
+        line-height: 1;
+    }
+
+    .ai-template-form h2 {
+        font-size: 30px;
+    }
+
+    .ai-template-form-wrap {
+        margin: 60px 0;
+    }
+
+    .ai-classic-about-cta {
+        padding: 40px 0;
+    }
+
+    .ai-classic-about-cta:after {
+        height: 100%;
+    }
+
+    .ai-classic-about-cta .ai-classic-about-cta-container {
+        display: block;
+    }
+
+    .ai-classic-about-cta .ai-classic-about-cta-container .ai-classic-about-cta-col {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+
+
+    .ai-classic-about-greetings h1 {
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    .ai-classic-about-greetings h3 {
+        font-size: 19px;
+    }
+
+    .ai-classic-about-cta {
+        padding: 30px 0;
+    }
+
+    .ai-classic-about-cta:after {
+        height: 100%;
+    }
+
+
+    .ai-classic-about-slide {
+        display: block !important;
+    }
+
+    .ai-classic-about-slide a {
+        display: block;
+    }
+
+    .ai-classic-about-slide .ai-classic-about-annotation {
+        display: none;
+    }
+
+    .ai-classic-about-testimonials {
+        padding: 60px 0;
+    }
+
+    .ai-classic-about-testimonials-title h2 {
+        margin-top: 0;
+        padding-top: 40px;
+    }
+
+    .ai-classic-about-testimonials-title h2 {
+        font-size: 40px;
+    }
+
+    .ai-classic-about-slide {
+        padding: 0 70px;
+    }
+
+    .ai-classic-about-slide .ai-classic-about-testimonials-content .ai-classic-testi-header {
+        display: block;
+        text-align: center;
+    }
+
+    .ai-classic-about-star {
+        margin-top: 15px;
+    }
+}

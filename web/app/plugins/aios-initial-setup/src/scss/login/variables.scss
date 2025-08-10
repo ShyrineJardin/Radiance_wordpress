@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Termina Demi';
+  src: url('https://resources.agentimage.com/marketing/fonts/termina-demi-webfont.woff2') format('woff2'),
+  url('https://resources.agentimage.com/marketing/fonts/termina-demi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$disabled-color: #60606B;
+
+$font-default: 'Montserrat', sans-serif;
+$font-button: 'Termina Demi', sans-serif;
+
+$color-default: #5C5C5C;
+$color-title: #000000;
+
+$input-background-color: #FCFCFC;
+$input-border-color: #E2E2E2;
+
+$transition: .3s linear;
+
+// calculation base on 1440px

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".dashboard-view-full-logs").forEach(t=>{t.addEventListener("click",l=>{l.preventDefault();const e=t.closest("tr").nextElementSibling;e&&e.classList.contains("dashboard-full-logs")&&(e.style.display=e.style.display==="none"||!e.style.display?"table-row":"none")})})});
